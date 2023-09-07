@@ -1,0 +1,176 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Export_Vendor_From_Kitty" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1410.4,1520.8" sap2010:WorkflowViewState.IdRef="Export_Vendor_From_Kitty_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Export_Vendor_From_Kitty" sap:VirtualizedContainerService.HintSize="1110.4,1456" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Edit - Config. Package Card - KITTY - Dynamics 365 Business Central" sap:VirtualizedContainerService.HintSize="1048,1344" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="24f9cefa-4a5c-4c4c-a36b-76d3d6236013" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1014.4,1127.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Excel'" sap:VirtualizedContainerService.HintSize="952,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="24f9cefa-4a5c-4c4c-a36b-76d3d6236013" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://uat.tfpmy.com/GK/?runinframe=1" CvTextArgument="Excel" CvType="Text" DesignTimeRectangle="651, 527, 38, 23" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Excel'" FullSelectorArgument="&lt;webctrl src='https://uat.tfpmy.com/GK/?runinframe=1' tag='IFRAME' /&gt;&lt;webctrl aria-label='Excel' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://uat.tfpmy.com/GK/?runinframe=1' tag='IFRAME' /&gt;&lt;webctrl aria-label='Excel' tag='SPAN' type='' class='' aaname='Excel' check:innerText='Excel' /&gt;" Guid="049a8bb6-77fe-4dc0-86b6-458b1dd4d60f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACoAAAAbCAYAAAAK5R1TAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEZSURBVFhH7ZPRDYMwDES7CnswBEzCHGzBN5OwAzvwya+rQ5x0Sk0bqW7VSj4pEgT7/GKHm/2JEjRaCRqtBI1Wgr6jdV2tbVtbluXcKUC3bbO+761pmoc1z/MZ9XlVg34TylOCRuttUOzjvqrBvu82DMOx8Kx7esfHcTy+UXjX7+oZ0lEUUCjEIge5ED00BnvTNB3P3sEApLDVoHpSLCQhWWMAyGc1LA9SCrHqR2leSEchGLBrOtKafMRrDqWTCQOFUIzGlFdAxbGXE+MKB4UBjLquczt6BQpddVQVAqoxpSE79gxER3ylEFBA6M9SFmaRstP861lDPSBAEawa1Ls/HBkMYER5hT0fLerdVc1/CfrLStBoJWiszO7Q7nYaNrYhYQAAAABJRU5ErkJggg==" InformativeScreenshot="6015edd9a7271a2192b348a092d5cd02.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Edit - Config. Package Card - KITTY - Dynamics 365 Business Central' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArgument="KITTY" CvType="Text" DesignTimeRectangle="254, 230, 1430, 67" ElementType="Text" FriendlyName="'KITTY'" FullSelectorArgument="&lt;webctrl src='https://uat.tfpmy.com/GK/?runinframe=1' tag='IFRAME' /&gt;&lt;webctrl aaname='KITTY' aria-role='heading' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://uat.tfpmy.com/GK/?runinframe=1' tag='IFRAME' /&gt;&lt;webctrl aaname='KITTY' aria-role='heading' tag='DIV' type='' class='title--1jA0lnJDFCLIFk9FXLg7KP thm-head-c1-font-size thm-head-c1-font-stack thm-head-c1-color' check:innerText='KITTY' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Excel'" sap:VirtualizedContainerService.HintSize="952,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="24f9cefa-4a5c-4c4c-a36b-76d3d6236013" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://uat.tfpmy.com/GK/?runinframe=1" CvTextArgument="Export to Excel" CvType="Text" DesignTimeRectangle="271, 565, 139, 46" DesignTimeScaleFactor="1.25" FriendlyName="'Export to Excel'" FullSelectorArgument="&lt;webctrl src='https://uat.tfpmy.com/GK/?runinframe=1' tag='IFRAME' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;div' parentid='5878' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://uat.tfpmy.com/GK/?runinframe=1' tag='IFRAME' /&gt;&lt;webctrl type='' parentid='5878' tag='DIV' class='ms-Button-flexContainer flexContainer-48' aaname='' check:innerText='Export to Excel' /&gt;" Guid="678dc92b-ecc2-4acf-87fa-868e7fc00ecc" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAI8AAAAyCAYAAABlN4g4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAU+SURBVHhe7ZnPa1RXFMejtVZBcdGKpYtC+g/4D2RhN90m+QsaKAhZZdFVNyWSYjpxbKJNmooLAy6EbERKKEJpDMZ2qvFHQC01C1HIZHQRUGPQtHo635s50zNn7n3vzXUSxuZ84GTe3Hfffeee+8l9k0zbnT/v0e27fxFe+VgHn7OwkNFGhhGJyWNEY/IY0Zg8RjQmjxGNyWNEY/IY0Zg8RjQmjxGNyWNEY/IY0Zg8RjQmjxGNyWNEU5WnrT/3RrH49FllJGOrYPIY0Zg8RjQ18hzIj9JHx8eq4WsLRenZSmUkY6tQI4/ePWxHMcDy8jJ1d3fT5ORkpWWdhuWZKy7Ro5XndPr6PI1fu0lHLl2h/G9X6bOzk/TFhZ/pkxOnaPc3xyu96+FE2tvb60Int9VZXV2lvr4+b61yuVyl18aTSZ7QYwty4LGEtv1D39MHQydpz9HvaN+3I7R3cJh2lWV5byBPO8uxrXwNIkQokVZlYWGBurq63GsamBMWG4veDFiezRTFRyZ5vrz4K/VPz1aD26bvP3A7EN6HAv0OTZyrvg9h8mTnrZIn6bGl5dl7dNjtSjjGjnSr9MgJxOdDmDzZ+d/Kg52J2wA/5jhCpMmDdjzTC4VCpeW/IvLCyAVFYeVnAXkdgzbZp6Ojo04GjIPgvp2dndTb21tzHcKXN8bCmLKfvkeWHDRp8vB99XnkqMfnunJgDbAWjD4v55lJnlBIUXxtoFnyABRD/gajr5wsigJ5EFIWLoBsw1ihQup+GG9sbKzSsg7fS14fAuPKvJmsOWjS5AG4Xo6NV7xPq8HExES1njiv64v+yBFkkufGUskJwcFtT1++rJMHj62D42dcO8R558hQzfkQnAgbziEnJ5PlY1kMPTkJCuHboTSyH7+XBWSSxtAgHy1PIzloWB5dK4SWg8fBMYLRcmnQjvNyPIC5cD3kekiq8mAngSQS2ablQUAaoNsRIUKJaDAZ9ENRZDFA0oLISfsWk9FFDS1k0r00vvs1koMG1/jmr+Gaoh/PnQnNiwnlJ3NLlWep/Kf4q9ev3TF+rq797Y6ZZu88OhEfvmKApAXFuHxNUuF88iA0SffS+BaikRw0uAbX+vLSYCy9I2W5Huf0rsaRWZ59gyM0ePl3dwxxzs7fdseMlmcjP/MALiwWTk8+aUHlAvoWk9kseRrJQZNl8QHXtKenp+6XLTQvJik/JlUe/Ff4q19m6PnamtuFINNIYY7+ebW+G0l5cAx5pCjNlEf2QWFRYPkbxW16DF3spMVBH1m0UJFx7ZvI00gOGj2fEDwO6qb7IyctlCRNYJAqz+GfLtKO8qPnw/yo+//N9vLxuwPHaPTqDZovPa6RB+fx2OL3EKeZ/+fRRdUFwEQxYT1pXJelDeP5+smiM1nyZUILkTUHTRZ59D3xivdoBzyGFoj/2gqdxzhTU1PuOFSDqjxPXryg3GyB+i/NOgl2DeSdFNP3HzpxpDy+aPQ/zL5nLC+gLipfw0LhHHYDFEiOpQvAYNLyPr5+fG8f8vokiXgh0M8nC4+BCOUqkePpQPvMzIw71jn5aog2eb2eqz4v8+P66/tU5ZGUVlbo4+Fx97UEI7/bel9+t1XegfDdFr7XQqTJ0wxYHlkcY/PxyuP7wMzgW3V8Jjo1d4t+uHaTvp6+TMeu/EGflnedz89PUfvIj+4vr43E5GkNvPK0OiZPa2DyGNG8lfIYrYHJY0Rj8hjRmDxGNCaPEY3JY0Rj8hjRmDxGNCaPEY3JY0Rj8hjRmDxGNG3FYpEQi4uLNa+63cKiNor0L6yp3zAEIRJQAAAAAElFTkSuQmCC" InformativeScreenshot="0b54173e388f66ba3fdd4bc7baafd4c3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Edit - Config. Package Card - KITTY - Dynamics 365 Business Central' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvTextArgument="Excel" CvType="Text" DesignTimeRectangle="651, 527, 38, 23" ElementType="Text" FriendlyName="'Excel'" FullSelectorArgument="&lt;webctrl src='https://uat.tfpmy.com/GK/?runinframe=1' tag='IFRAME' /&gt;&lt;webctrl aria-label='Excel' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://uat.tfpmy.com/GK/?runinframe=1' tag='IFRAME' /&gt;&lt;webctrl aria-label='Excel' tag='SPAN' type='' class='' aaname='Excel' check:innerText='Excel' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACoAAAAbCAYAAAAK5R1TAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFQSURBVFhH7ZMxTgMxEEVDwQ3CGSBXgYvAJaCCINFAOmjpaGnS0kCRhh6JNqROmlDY8FYZ6cvxEqMMKJH8pZF27Zk/z+PdTtwSVVBvVVBvVVBvVdB19DqexO7ldRy+vS9WEtCP6SweDO5i57S/FDcvo0XW36sY9D+hcqqg3loblHW+VzWYzT/j4f1DEzzrmn7jx4/DZs/Eu+6rp8tEaaBQ5FJDLTIPzWHt/Om5ec4dDCCFLQbVkxIUUaw5ANqzGqYHSUWu+pm0zmWiCAObml5pST35WmPSm3EDRTQzY1OugcquPb0xC3dQDDDaH9xmJ9oGitomqioC7a0A1RwM98SQiR19T+zkBxDqqMenTakv+jUoEMDYz5I2tiYKy5799dZDPRBQBlYMunPWXwoaExhgZMo1zvloU5u87mv9StBNVgX11vaAhhAisXtxtbERQohffW5nUv/V+HkAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Yes'" sap:VirtualizedContainerService.HintSize="952,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="24f9cefa-4a5c-4c4c-a36b-76d3d6236013" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://uat.tfpmy.com/GK/?runinframe=1" CvElementArea="1084, 627, 86, 41" CvTextArea="1115, 641, 22, 13" CvTextArgument="Yes" CvType="Button" DesignTimeRectangle="1087, 629, 83, 38" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Yes'" FullSelectorArgument="&lt;webctrl src='https://uat.tfpmy.com/GK/?runinframe=1' tag='IFRAME' /&gt;&lt;webctrl aaname='Yes' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://uat.tfpmy.com/GK/?runinframe=1' tag='IFRAME' /&gt;&lt;webctrl aaname='Yes' tag='BUTTON' type='button' class='cursorinherit ms-nav-button thm-popp-a2-font-stack-1--minflat thm-popp-a2-color-2--minflat thm-popp-a2-color-2--mintint--hover thm-popp-h1-bgcolor--hover thm-popp-h1-bdrcolor--hover' check:innerText='Yes' /&gt;" Guid="6794e049-1e6e-412d-b965-5d11f2c3cc99" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFcAAAAqCAYAAADGdMdzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAE+SURBVGhD7ZVhCoMwDIV3ld5s3kV2loonEXoNoZeQTCt1Kd1kMN+M8ALfD0P88/lMbsKCFeUCa5Pb9z05AF2F3GmayA9QLhDKBUK5QCgXCOUCoVwglAuEcoFQLhDKBUK5QCgXCOUCMSk3PJy4R3jbb7pY9a1iNLlBWteIH1Vv9NLcvcRizjZG5U4Su0alN4q/O2mHes4yZuUW6R1acTq1y7ObV0dCJ3x5J/fPXyGG5eb0+jK1SWwrIc8p8eVOjhIGyt1hXQc6tfVRW2bW9H46hGdhXG6dxiRb/fqZnOwkeOkZOH4Xk7s+f3PY0ko5WfDl5FY7d2NO9byfi6NHuftUcmdSKvVaUAft1X/3Af6LeblXhnKBUC4QygVCuUAoFwjlAqFcIJQLhHKBUC4QygWyK5f8jq5NLuv4olxYiTwBYP04N1YqKfAAAAAASUVORK5CYII=" InformativeScreenshot="b52e5ad71e85218f937bf96e13d3129d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dynamics 365 Business Central - Dynamics 365 Business Central' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="1118, 638, 19, 18" ElementType="Text" FriendlyName="'Yes'" FullSelectorArgument="&lt;webctrl src='https://uat.tfpmy.com/GK/?runinframe=1' tag='IFRAME' /&gt;&lt;webctrl aaname='Yes' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://uat.tfpmy.com/GK/?runinframe=1' tag='IFRAME' /&gt;&lt;webctrl aaname='Yes' tag='SPAN' type='' class='' check:innerText='Yes' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABcAAAAWCAYAAAArdgcFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAADPSURBVEhL7VLBDcMgDOwq3izsgjILGQWJNSKxBHKxEYmJaUWktC8e98CY8/mOV0oJf4VJ3sUk7+I/5GEFhDWoBqqbLar6CITygBYMul007A7N4jAePffQ2BI3I9RHdAug9ef9XVw8F+q9RZCq6QzZOobckN7UemuhCrSod61qJrYYap8Y3GYSMfgv5NUOqVqHSj1F/aePQOiQazU8TKxeUTfjAVS7hD9AXs4jwbKlYsAQufL8QN4q59OEfps8g1VJW0SgZ70V0CV/CpO8g4RvdD1Wi4Rco/IAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NCheckState DisplayName="Check App State 'KITTY'" sap:VirtualizedContainerService.HintSize="952,419.2" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="24f9cefa-4a5c-4c4c-a36b-76d3d6236013" Timeout="300" Version="V3">
+              <uix:NCheckState.IfExists>
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,200.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="387.2,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;File Downloaded&quot;]" />
+                </Sequence>
+              </uix:NCheckState.IfExists>
+              <uix:NCheckState.IfNotExists>
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,200.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="387.2,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Something Went wrong because, it took too much time to export the excel. Please try again&quot;]" />
+                </Sequence>
+              </uix:NCheckState.IfNotExists>
+              <uix:NCheckState.Target>
+                <uix:TargetAnchorable BrowserURL="https://uat.tfpmy.com/GK/?runinframe=1" CvTextArgument="KITTY" CvType="Text" DesignTimeRectangle="254, 230, 1430, 67" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'KITTY'" FullSelectorArgument="&lt;webctrl src='https://uat.tfpmy.com/GK/?runinframe=1' tag='IFRAME' /&gt;&lt;webctrl aaname='KITTY' aria-role='heading' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://uat.tfpmy.com/GK/?runinframe=1' tag='IFRAME' /&gt;&lt;webctrl aaname='KITTY' aria-role='heading' tag='DIV' type='' class='title--1jA0lnJDFCLIFk9FXLg7KP thm-head-c1-font-size thm-head-c1-font-stack thm-head-c1-color' check:innerText='KITTY' /&gt;" Guid="474078c2-294f-4798-991b-637ad68fcb9d" ImageBase64="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" InformativeScreenshot="a29293f3a1f6c8932e25ccd6e0031434.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Edit - Config. Package Card - KITTY - Dynamics 365 Business Central' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="254, 198, 193, 18" ElementType="Text" FriendlyName="'Config. Package Card'" FullSelectorArgument="&lt;webctrl src='https://uat.tfpmy.com/GK/?runinframe=1' tag='IFRAME' /&gt;&lt;webctrl aaname='Config. Package Card' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://uat.tfpmy.com/GK/?runinframe=1' tag='IFRAME' /&gt;&lt;webctrl aaname='Config. Package Card' tag='SPAN' type='' class='content--11EpEhMg6WiqoEO8wTAXfn' check:innerText='CONFIG. PACKAGE CARD' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NCheckState.Target>
+            </uix:NCheckState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-9, -9, 1938, 1038" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAACSSURBVDhPY8AJFALOA/F9ME0yUAhQAGuGsEGGKIDZJAGKXAACCgECQPwfTJMMFAIagPg91ACQKwqgMjgAsh8Rmh3A4hC6HyoLAShhgu5XhGbsYYAhDuLAaIiTQRg9FmDiEC/BxKEMCl0AAgoBBlAWiI0cBgZQGk8YYAMkxwI2QFE6AAFcYUAUwIyFgcgLRAEGBgAsMF7GllfZPQAAAABJRU5ErkJggg==" InformativeScreenshot="2faff8b1b70ca32b907e5963b90f3871.jpg" Selector="&lt;html app='chrome.exe' title='Edit - Config. Package Card - KITTY - Dynamics 365 Business Central' /&gt;" Title="Edit - Config. Package Card - KITTY - Dynamics 365 Business Central" Url="https://uat.tfpmy.com/GK/?bookmark=21%3bryEAAAJ7%2f0sASQBUAFQAWQ%3d%3d&amp;page=8614&amp;company=TFP%20Retail%20Sdn%20Bhd&amp;dc=0" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
