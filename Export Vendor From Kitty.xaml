@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Export_Vendor_From_Kitty" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1664.8,2476" sap2010:WorkflowViewState.IdRef="Export_Vendor_From_Kitty_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Export_Vendor_From_Kitty" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1668,1973" sap2010:WorkflowViewState.IdRef="Export_Vendor_From_Kitty_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -89,25 +89,25 @@
       <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Export_Vendor_From_Kitty" sap:VirtualizedContainerService.HintSize="1675.2,2411.2" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Export_Vendor_From_Kitty" sap:VirtualizedContainerService.HintSize="1678,1908" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Edit - Config. Package Card - KITTY - Dynamics 365 Business Central" sap:VirtualizedContainerService.HintSize="1612.8,2299.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="24f9cefa-4a5c-4c4c-a36b-76d3d6236013" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Edit - Config. Package Card - KITTY - Dynamics 365 Business Central" sap:VirtualizedContainerService.HintSize="1616,1797" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="24f9cefa-4a5c-4c4c-a36b-76d3d6236013" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1579.2,2082.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1582,1580" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Excel'" sap:VirtualizedContainerService.HintSize="1516.8,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="24f9cefa-4a5c-4c4c-a36b-76d3d6236013" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Excel'" sap:VirtualizedContainerService.HintSize="1520,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="24f9cefa-4a5c-4c4c-a36b-76d3d6236013" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://uat.tfpmy.com/GK/?runinframe=1" CvTextArgument="Excel" CvType="Text" DesignTimeRectangle="651, 527, 38, 23" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Excel'" FullSelectorArgument="&lt;webctrl src='https://uat.tfpmy.com/GK/?runinframe=1' tag='IFRAME' /&gt;&lt;webctrl aria-label='Excel' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://uat.tfpmy.com/GK/?runinframe=1' tag='IFRAME' /&gt;&lt;webctrl aria-label='Excel' tag='SPAN' type='' class='' aaname='Excel' check:innerText='Excel' /&gt;" Guid="049a8bb6-77fe-4dc0-86b6-458b1dd4d60f" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAACoAAAAbCAYAAAAK5R1TAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAEZSURBVFhH7ZPRDYMwDES7CnswBEzCHGzBN5OwAzvwya+rQ5x0Sk0bqW7VSj4pEgT7/GKHm/2JEjRaCRqtBI1Wgr6jdV2tbVtbluXcKUC3bbO+761pmoc1z/MZ9XlVg34TylOCRuttUOzjvqrBvu82DMOx8Kx7esfHcTy+UXjX7+oZ0lEUUCjEIge5ED00BnvTNB3P3sEApLDVoHpSLCQhWWMAyGc1LA9SCrHqR2leSEchGLBrOtKafMRrDqWTCQOFUIzGlFdAxbGXE+MKB4UBjLquczt6BQpddVQVAqoxpSE79gxER3ylEFBA6M9SFmaRstP861lDPSBAEawa1Ls/HBkMYER5hT0fLerdVc1/CfrLStBoJWiszO7Q7nYaNrYhYQAAAABJRU5ErkJggg==" InformativeScreenshot="6015edd9a7271a2192b348a092d5cd02.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Edit - Config. Package Card - KITTY - Dynamics 365 Business Central' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -118,7 +118,7 @@
                 </uix:TargetAnchorable>
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Excel'" sap:VirtualizedContainerService.HintSize="1516.8,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="24f9cefa-4a5c-4c4c-a36b-76d3d6236013" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Excel'" sap:VirtualizedContainerService.HintSize="1520,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="24f9cefa-4a5c-4c4c-a36b-76d3d6236013" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://uat.tfpmy.com/GK/?runinframe=1" CvTextArgument="Export to Excel" CvType="Text" DesignTimeRectangle="271, 565, 139, 46" DesignTimeScaleFactor="1.25" FriendlyName="'Export to Excel'" FullSelectorArgument="&lt;webctrl src='https://uat.tfpmy.com/GK/?runinframe=1' tag='IFRAME' /&gt;&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;a&amp;gt;div' parentid='5878' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://uat.tfpmy.com/GK/?runinframe=1' tag='IFRAME' /&gt;&lt;webctrl type='' parentid='5878' tag='DIV' class='ms-Button-flexContainer flexContainer-48' aaname='' check:innerText='Export to Excel' /&gt;" Guid="678dc92b-ecc2-4acf-87fa-868e7fc00ecc" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAI8AAAAyCAYAAABlN4g4AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAU+SURBVHhe7ZnPa1RXFMejtVZBcdGKpYtC+g/4D2RhN90m+QsaKAhZZdFVNyWSYjpxbKJNmooLAy6EbERKKEJpDMZ2qvFHQC01C1HIZHQRUGPQtHo635s50zNn7n3vzXUSxuZ84GTe3Hfffeee+8l9k0zbnT/v0e27fxFe+VgHn7OwkNFGhhGJyWNEY/IY0Zg8RjQmjxGNyWNEY/IY0Zg8RjQmjxGNyWNEY/IY0Zg8RjQmjxGNyWNEU5WnrT/3RrH49FllJGOrYPIY0Zg8RjQ18hzIj9JHx8eq4WsLRenZSmUkY6tQI4/ePWxHMcDy8jJ1d3fT5ORkpWWdhuWZKy7Ro5XndPr6PI1fu0lHLl2h/G9X6bOzk/TFhZ/pkxOnaPc3xyu96+FE2tvb60Int9VZXV2lvr4+b61yuVyl18aTSZ7QYwty4LGEtv1D39MHQydpz9HvaN+3I7R3cJh2lWV5byBPO8uxrXwNIkQokVZlYWGBurq63GsamBMWG4veDFiezRTFRyZ5vrz4K/VPz1aD26bvP3A7EN6HAv0OTZyrvg9h8mTnrZIn6bGl5dl7dNjtSjjGjnSr9MgJxOdDmDzZ+d/Kg52J2wA/5jhCpMmDdjzTC4VCpeW/IvLCyAVFYeVnAXkdgzbZp6Ojo04GjIPgvp2dndTb21tzHcKXN8bCmLKfvkeWHDRp8vB99XnkqMfnunJgDbAWjD4v55lJnlBIUXxtoFnyABRD/gajr5wsigJ5EFIWLoBsw1ihQup+GG9sbKzSsg7fS14fAuPKvJmsOWjS5AG4Xo6NV7xPq8HExES1njiv64v+yBFkkufGUskJwcFtT1++rJMHj62D42dcO8R558hQzfkQnAgbziEnJ5PlY1kMPTkJCuHboTSyH7+XBWSSxtAgHy1PIzloWB5dK4SWg8fBMYLRcmnQjvNyPIC5cD3kekiq8mAngSQS2ablQUAaoNsRIUKJaDAZ9ENRZDFA0oLISfsWk9FFDS1k0r00vvs1koMG1/jmr+Gaoh/PnQnNiwnlJ3NLlWep/Kf4q9ev3TF+rq797Y6ZZu88OhEfvmKApAXFuHxNUuF88iA0SffS+BaikRw0uAbX+vLSYCy9I2W5Huf0rsaRWZ59gyM0ePl3dwxxzs7fdseMlmcjP/MALiwWTk8+aUHlAvoWk9kseRrJQZNl8QHXtKenp+6XLTQvJik/JlUe/Ff4q19m6PnamtuFINNIYY7+ebW+G0l5cAx5pCjNlEf2QWFRYPkbxW16DF3spMVBH1m0UJFx7ZvI00gOGj2fEDwO6qb7IyctlCRNYJAqz+GfLtKO8qPnw/yo+//N9vLxuwPHaPTqDZovPa6RB+fx2OL3EKeZ/+fRRdUFwEQxYT1pXJelDeP5+smiM1nyZUILkTUHTRZ59D3xivdoBzyGFoj/2gqdxzhTU1PuOFSDqjxPXryg3GyB+i/NOgl2DeSdFNP3HzpxpDy+aPQ/zL5nLC+gLipfw0LhHHYDFEiOpQvAYNLyPr5+fG8f8vokiXgh0M8nC4+BCOUqkePpQPvMzIw71jn5aog2eb2eqz4v8+P66/tU5ZGUVlbo4+Fx97UEI7/bel9+t1XegfDdFr7XQqTJ0wxYHlkcY/PxyuP7wMzgW3V8Jjo1d4t+uHaTvp6+TMeu/EGflnedz89PUfvIj+4vr43E5GkNvPK0OiZPa2DyGNG8lfIYrYHJY0Rj8hjRmDxGNCaPEY3JY0Rj8hjRmDxGNCaPEY3JY0Rj8hjRmDxGNG3FYpEQi4uLNa+63cKiNor0L6yp3zAEIRJQAAAAAElFTkSuQmCC" InformativeScreenshot="0b54173e388f66ba3fdd4bc7baafd4c3.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Edit - Config. Package Card - KITTY - Dynamics 365 Business Central' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -129,7 +129,7 @@
                 </uix:TargetAnchorable>
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Yes'" sap:VirtualizedContainerService.HintSize="1516.8,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="24f9cefa-4a5c-4c4c-a36b-76d3d6236013" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Yes'" sap:VirtualizedContainerService.HintSize="1520,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="24f9cefa-4a5c-4c4c-a36b-76d3d6236013" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://uat.tfpmy.com/GK/?runinframe=1" CvElementArea="1084, 627, 86, 41" CvTextArea="1115, 641, 22, 13" CvTextArgument="Yes" CvType="Button" DesignTimeRectangle="1087, 629, 83, 38" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Yes'" FullSelectorArgument="&lt;webctrl src='https://uat.tfpmy.com/GK/?runinframe=1' tag='IFRAME' /&gt;&lt;webctrl aaname='Yes' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://uat.tfpmy.com/GK/?runinframe=1' tag='IFRAME' /&gt;&lt;webctrl aaname='Yes' tag='BUTTON' type='button' class='cursorinherit ms-nav-button thm-popp-a2-font-stack-1--minflat thm-popp-a2-color-2--minflat thm-popp-a2-color-2--mintint--hover thm-popp-h1-bgcolor--hover thm-popp-h1-bdrcolor--hover' check:innerText='Yes' /&gt;" Guid="6794e049-1e6e-412d-b965-5d11f2c3cc99" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFcAAAAqCAYAAADGdMdzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAE+SURBVGhD7ZVhCoMwDIV3ld5s3kV2loonEXoNoZeQTCt1Kd1kMN+M8ALfD0P88/lMbsKCFeUCa5Pb9z05AF2F3GmayA9QLhDKBUK5QCgXCOUCoVwglAuEcoFQLhDKBUK5QCgXCOUCMSk3PJy4R3jbb7pY9a1iNLlBWteIH1Vv9NLcvcRizjZG5U4Su0alN4q/O2mHes4yZuUW6R1acTq1y7ObV0dCJ3x5J/fPXyGG5eb0+jK1SWwrIc8p8eVOjhIGyt1hXQc6tfVRW2bW9H46hGdhXG6dxiRb/fqZnOwkeOkZOH4Xk7s+f3PY0ko5WfDl5FY7d2NO9byfi6NHuftUcmdSKvVaUAft1X/3Af6LeblXhnKBUC4QygVCuUAoFwjlAqFcIJQLhHKBUC4QygWyK5f8jq5NLuv4olxYiTwBYP04N1YqKfAAAAAASUVORK5CYII=" InformativeScreenshot="b52e5ad71e85218f937bf96e13d3129d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Dynamics 365 Business Central - Dynamics 365 Business Central' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -140,48 +140,34 @@
                 </uix:TargetAnchorable>
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NCheckState DisplayName="Check App State 'Exporting package'" sap:VirtualizedContainerService.HintSize="1516.8,1374.4" sap2010:WorkflowViewState.IdRef="NCheckState_1" Mode="WaitDisappear" ScopeIdentifier="24f9cefa-4a5c-4c4c-a36b-76d3d6236013" Timeout="300" Version="V3">
+            <uix:NCheckState DisplayName="Check App State 'Exporting package'" sap:VirtualizedContainerService.HintSize="1520,874" sap2010:WorkflowViewState.IdRef="NCheckState_1" Mode="WaitDisappear" ScopeIdentifier="24f9cefa-4a5c-4c4c-a36b-76d3d6236013" Timeout="300" Version="V3">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target disappears" sap:VirtualizedContainerService.HintSize="1014.4,1156" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Target disappears" sap:VirtualizedContainerService.HintSize="1016,657" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="952,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;File is Downloading&quot;]" />
-                  <ui:GetLastDownloadedFile File="{x:Null}" FileResource="{x:Null}" IgnoreFiles="{x:Null}" Timeout="{x:Null}" DisplayName="Wait for Download" DownloadFolder="C:\Users\ah.nadim\Downloads" sap:VirtualizedContainerService.HintSize="952,456" sap2010:WorkflowViewState.IdRef="GetLastDownloadedFile_1">
-                    <ui:GetLastDownloadedFile.Body>
-                      <ActivityAction>
-                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,197.6" sap2010:WorkflowViewState.IdRef="Sequence_7">
-                          <sap:WorkflowViewStateService.ViewState>
-                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            </scg:Dictionary>
-                          </sap:WorkflowViewStateService.ViewState>
-                          <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="387.2,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[&quot;File Downloaded&quot;]" />
-                        </Sequence>
-                      </ActivityAction>
-                    </ui:GetLastDownloadedFile.Body>
-                  </ui:GetLastDownloadedFile>
-                  <uix:NCheckState DisplayName="Check App State 'Creating Excel worksheet'" sap:VirtualizedContainerService.HintSize="952,419.2" sap2010:WorkflowViewState.IdRef="NCheckState_2" Mode="WaitDisappear" ScopeIdentifier="24f9cefa-4a5c-4c4c-a36b-76d3d6236013" Timeout="300" Version="V3">
+                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="954,85" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;File is Downloading&quot;]" />
+                  <uix:NCheckState DisplayName="Check App State 'Creating Excel worksheet'" sap:VirtualizedContainerService.HintSize="954,417" sap2010:WorkflowViewState.IdRef="NCheckState_2" Mode="WaitDisappear" ScopeIdentifier="24f9cefa-4a5c-4c4c-a36b-76d3d6236013" Timeout="300" Version="V3">
                     <uix:NCheckState.IfExists>
-                      <Sequence DisplayName="Target disappears" sap:VirtualizedContainerService.HintSize="449.6,200.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                      <Sequence DisplayName="Target disappears" sap:VirtualizedContainerService.HintSize="450,200" sap2010:WorkflowViewState.IdRef="Sequence_5">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="387.2,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;File Downloaded&quot;]" />
+                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="388,85" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;File Downloaded&quot;]" />
                       </Sequence>
                     </uix:NCheckState.IfExists>
                     <uix:NCheckState.IfNotExists>
-                      <Sequence DisplayName="Target does not disappear" sap:VirtualizedContainerService.HintSize="449.6,200.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <Sequence DisplayName="Target does not disappear" sap:VirtualizedContainerService.HintSize="450,200" sap2010:WorkflowViewState.IdRef="Sequence_6">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="387.2,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[&quot;Something Went wrong because, it took too much time to export the excel. Please try again&quot;]" />
+                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="388,85" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[&quot;Something Went wrong because, it took too much time to export the excel. Please try again&quot;]" />
                       </Sequence>
                     </uix:NCheckState.IfNotExists>
                     <uix:NCheckState.Target>
@@ -197,13 +183,13 @@
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not disappear" sap:VirtualizedContainerService.HintSize="449.6,200.8" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <Sequence DisplayName="Target does not disappear" sap:VirtualizedContainerService.HintSize="450,200" sap2010:WorkflowViewState.IdRef="Sequence_4">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="387.2,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Something Went wrong because, it took too much time to export the excel. Please try again&quot;]" />
+                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="388,85" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;Something Went wrong because, it took too much time to export the excel. Please try again&quot;]" />
                 </Sequence>
               </uix:NCheckState.IfNotExists>
               <uix:NCheckState.Target>

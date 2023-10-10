@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Configuration_Packages" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="2229.6,3170.4" sap2010:WorkflowViewState.IdRef="Configuration_Packages_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Configuration_Packages" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="2234,3122" sap2010:WorkflowViewState.IdRef="Configuration_Packages_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -87,25 +87,25 @@
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Configuration_Packages" sap:VirtualizedContainerService.HintSize="2240,3105.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Configuration_Packages" sap:VirtualizedContainerService.HintSize="2244,3057" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Enter till Kitty" sap:VirtualizedContainerService.HintSize="2177.6,2993.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="c7436b30-e998-4660-90b7-b74c4337bdd0" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Enter till Kitty" sap:VirtualizedContainerService.HintSize="2182,2946" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="c7436b30-e998-4660-90b7-b74c4337bdd0" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="2144,2736.8" sap2010:WorkflowViewState.IdRef="Sequence_2">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="2148,2729" sap2010:WorkflowViewState.IdRef="Sequence_2">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Dynamics 365'" sap:VirtualizedContainerService.HintSize="2081.6,157.6" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c7436b30-e998-4660-90b7-b74c4337bdd0" Version="V3">
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Dynamics 365'" sap:VirtualizedContainerService.HintSize="2086,157" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c7436b30-e998-4660-90b7-b74c4337bdd0" Version="V3">
               <uix:NClick.Target>
                 <uix:TargetAnchorable BrowserURL="https://uat.tfpmy.com/GK/" CvType="Icon" DesignTimeRectangle="1678, 105, 63, 63" DesignTimeScaleFactor="1.25" FriendlyName="'A #'" FullSelectorArgument="&lt;webctrl tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='A' type='' class='ms-list-itemLink icon-iSearch' aaname='Tell me what you want to do. Quickly access actions, pages, reports, documentation, and apps and consulting services.' /&gt;" Guid="bdeab2ca-5636-455c-833b-74176f29419e" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEMAAABDCAYAAADHyrhzAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAImSURBVHhe7dwxa9tAGMZxfxx/EOHd4L0mgyFDJocu2UQhiEJxl5pC8FKyFHUIKgQ0BDTJQ8BDwYZUHooCGQQZDgzanp5wCE/TK0mhOpvyHPwXv1ruJ8m+yR1oPa7O92INta3T7XahtgmDEgYlDEoYlDAoYVDCoIRBCYMSBiUMShiUMChhUMKghEEJgxIGJQxKGJQwKGFQwqB2gzEYIfwYI7lIkHya4OhV4L7Oc34xBiGSG4O6Nii/5UgtRnZdoLyvYW5zzMa7RfGGEYwTFBahuAjR/20eYPghQ7mpsDgbPZn5yw9GL0J+b5C/febOH8YWrER66Jh5yAvGyVUFM4+cs6cNvxSoV+cIHLO284AR2qfC3u0D18zVFItNgbjnmrWbBwz76JsckXPmLl7bV+rUPWszYVAeMGZYbpaYOWeuhkhvK2SvXbN284AR4HxlsDx74RniILHnjr97kv5VHjBspzlMs8FnvxQDzFY1ysvdnDX8YNhNRnN78lwnOP4jSB+TeQXcpTh2ztvPE0aT3WxWot6UWHyeYDR4+Lw3xNG7BMvKHslXGfI7g+oq+l/PGb8WjKdIr0uYTW1hmuzmb3LEb/rba+xpNdsRiHeMF/UAUl6GXkH2E6OpFyL9YUG+nrjnLbS/GE0WZPre3y/LfmN4ThiUMChhUMKghEEJgxIGJQxKGJQwKGFQwqCEQQmDEgYlDEoYlDAoYVDCoIRB6c9EaAnjcQE/Aa3Twir5FTkNAAAAAElFTkSuQmCC" InformativeScreenshot="2fc3e80a0678364e58640be5098b8c9c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Accounting Manager - Dynamics 365 Business Central' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -116,7 +116,7 @@
                 </uix:TargetAnchorable>
               </uix:NClick.Target>
             </uix:NClick>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Tell me'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="2081.6,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="c7436b30-e998-4660-90b7-b74c4337bdd0" Text="Configuration Packages" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Tell me'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="2086,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="c7436b30-e998-4660-90b7-b74c4337bdd0" Text="Configuration Packages" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable BrowserURL="https://uat.tfpmy.com/GK/?runinframe=1" CvType="InputBox" DesignTimeRectangle="579, 248, 780, 35" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'INPUT 5038ee'" FullSelectorArgument="&lt;webctrl src='https://uat.tfpmy.com/GK/?runinframe=1' tag='IFRAME' /&gt;&lt;webctrl tag='INPUT' type='text' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://uat.tfpmy.com/GK/?runinframe=1' tag='IFRAME' /&gt;&lt;webctrl tag='INPUT' type='text' class='cursorinherit stringcontrol-edit thm-cont-u1-font-size thm-cont-u1-font-stack thm-cont-u1-color-2--medflat thm-cont-s1-bdrcolor--focus thm-cont-s1-outlinecolor--focus thm-cont-h1-bdrcolor--hover thm-cont-h1-bdrcolor--prev-sib-hover' aaname='' /&gt;" Guid="5782745f-2a62-476b-91ab-0836c7f51be7" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAxAAAAAnCAYAAACfbq51AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAGdSURBVHhe7dkxigJBFEVRU1fnGtzLBE7gRgQjwVW4DzVvTBoseUIVEyjz8z4PTvS7F3CpVTMzMzMzMytOQJiZmZmZWXkjIB7z3C7XW9scjm2927fVzy8AALBQaYK0QRohrdA3AiIH4QAAAPyVRkgr9I2ASF3kg+3p3O7T1J7PJwAAsFBpgrRBGiGt0DcCor8+iAcAACDSBv0Vom8ERA7x6UcAAGCZeif0CQgAAOArAQEAAJQJCAAAoExAAAAAZQICAAAoExAAAECZgAAAAMoEBAAAUCYgAACAMgEBAACUCQgAAKBMQAAAAGUCAgAAKBMQAABAmYAAAADKBAQAAFAmIAAAgDIBAQAAlAkIAACgTEAAAABlAgIAACgTEAAAQJmAAAAAygQEAABQJiAAAIAyAQEAAJR9DYj1bv8+3Kfp448AAMCypA3SCGmFvhEQm8PxfdyeziICAAAWLk2QNkgjpBX6RkBcrrfxCgEAABBphLRC3wiIxzy/D6kLIQEAAMuWJkgbpBHSCn0jIMzMzMzMzP6bgDAzMzMzs+JaewEgL2jvkY8yrwAAAABJRU5ErkJggg==" InformativeScreenshot="63aac39196c441a1b1bff49789fd0b16.png" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Accounting Manager - Dynamics 365 Business Central' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
                   <uix:TargetAnchorable.Anchors>
@@ -127,7 +127,7 @@
                 </uix:TargetAnchorable>
               </uix:NTypeInto.Target>
             </uix:NTypeInto>
-            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayBefore="3000" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="2081.6,136.8" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="enter" KeyModifiers="None" SpecialKey="True">
+            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayBefore="3000" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="2086,137" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="enter" KeyModifiers="None" SpecialKey="True">
               <ui:SendHotkey.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="f5595f41-4785-4248-892f-62c34562ccae">
                   <ui:Target.TimeoutMS>
@@ -139,15 +139,15 @@
                 </ui:Target>
               </ui:SendHotkey.Target>
             </ui:SendHotkey>
-            <uix:NCheckState DisplayName="Check App State 'Configuration Packages'" sap:VirtualizedContainerService.HintSize="2081.6,1988.8" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="c7436b30-e998-4660-90b7-b74c4337bdd0" Timeout="300" Version="V3">
+            <uix:NCheckState DisplayName="Check App State 'Configuration Packages'" sap:VirtualizedContainerService.HintSize="2086,1982" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="c7436b30-e998-4660-90b7-b74c4337bdd0" Timeout="300" Version="V3">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="1579.2,1770.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="1582,1765" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Configuration Packages'" sap:VirtualizedContainerService.HintSize="1516.8,157.6" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c7436b30-e998-4660-90b7-b74c4337bdd0" Version="V3">
+                  <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Configuration Packages'" sap:VirtualizedContainerService.HintSize="1520,157" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c7436b30-e998-4660-90b7-b74c4337bdd0" Version="V3">
                     <uix:NClick.Target>
                       <uix:TargetAnchorable BrowserURL="https://uat.tfpmy.com/GK/?runinframe=1" CvTextArgument="Search" CvType="Text" DesignTimeRectangle="254, 246, 101, 48" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Search'" FullSelectorArgument="&lt;webctrl src='https://uat.tfpmy.com/GK/?runinframe=1' tag='IFRAME' /&gt;&lt;webctrl tabindex='0' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://uat.tfpmy.com/GK/?runinframe=1' tag='IFRAME' /&gt;&lt;webctrl tabindex='0' tag='DIV' type='' class='search-box-container--3dH8G2pd6yVsfFDbkqcjpd thm-head-g1-bgcolor thm-popp-h2-bgcolor--hover' aaname='' /&gt;" Guid="07e6ca3c-b3ed-4497-bde8-0c0d00d72810" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGkAAAA0CAYAAACJkhYTAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAQDSURBVHhe7ZlJaBRREIYD4sWj3gQPOYkI4sGDEAQPiiiSAcGTiHgRRHPyIIqouBAlEfc1IxqzmKgJOoqKBpcMGkMUkXHcYhS3SUyiYybrrZz/hRcfLzWb2mM/rIGPabqqu6fr63r9uqeA5OP7j0hy4FMwNDxCgr8RSQ4gkhxAJDmASHIAkeQAIskBRJIDiCQHEEkOIJIcQCQ5gEhyAJHkACLJAfIiKRb/QTvuhGnGoVM0YdseBZb3hR/R174Eu43wC08lDSa5En1FU0oP0MzDFXS89QlFO7/S088xOtrSRtMPnqRp5Ueoqb2D3V4YxVNJDZEXStCRpJCBoeFx8b7BISq994Aml+6nUPT1uLgwimeS3nb30qyjQTWkoaO4HIBYWXMLzTlxhj59j7M5LvM8GqXi4oD65uLZ4Jmk8nALzT9dTV0/Mt9zPn6L0+xjp6nmaYSNpwMnX1RURIWFhWMEAgH6Eutk8/ONbyXFBwZpWW2DEsXFOTZcb6LVjdfSdp1NdU2NEmQW4HtykrJr926RlInuvn5acKY2p/sMhC6qrKOeRD8bt4EEdAxEcXG/4FtJKDQK3hh5ycY5cpWEk0YX3W8Os3G/4FtJieSsbcXFK7S16T4bt8EQt+bydVobusHGOTCsrS8pUWCZy9Horkt3z0JHmvc1exhFHMdqa3usYlzc3F4fw5SEYdiO6+3T4YkkUPfsuZrdYZbHxU1ednWrh9sbr9rZeCpw4igWTjpVR+kcc1hEscwi4RvrTNl2DrZHsTdt2jzuokCuLa0iGByTZP/GXC4w4JkkzOoWnj1P667eVM9DXA7oTQzQqoYQLa26kPVQZ6JPWF+htiwU0C4GigcBpjgbFNccppBriwA4HrdeoyXZx8q0nYlnkiBmy+176hXQyksh9hmoo6eXltc1qo5rz6Lj0mHK0gXRMmxxOhcCzfXI07Jt6dgnN0RxF4EJJHD3JC3P/m0cnkiCoJ13wzS17DCdbH1C84JVNGlnGS0+V686C2CSMHH7XlpSVa9kcfv5HcwrXhfCLrxGS9J5pgS7iNivLSOVbBPsx3eSTEG33oy+k8MroYfvP9LGm3do7qlKBZaffenM6bkoG8yhLFUnmaQqdDaSALZzShInKN+YYrK50lPlQAq6LZMkrOeGQY2vJKFb8A4uX4JwkvZMSxfcLCaKgGKjmDoP6NkXliGIG+qykaSPaYsyZ3e+kGQKCr/7wOb8bcxCmnBdw+Wa0nShdQzL+nkokyQNjmvuX/8OX0j6F4L+N/5IkgjKD38kKRLrUv8DiSBv+WsTB8E7RJIDiCQHEEkOIJIcQCQ5gEhyAJHkACLJAUSSA4gkBxBJDiCSHGBMUuTFG8GnSCf5nhH6CZQ3Cv+lDEjdAAAAAElFTkSuQmCC" InformativeScreenshot="6d0f593f4f95d19b90e9a977c294ff2d.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='View - Configuration Packages - Dynamics 365 Business Central' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
@@ -158,7 +158,7 @@
                       </uix:TargetAnchorable>
                     </uix:NClick.Target>
                   </uix:NClick>
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Configuration Packages'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1516.8,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="c7436b30-e998-4660-90b7-b74c4337bdd0" Text="KITTY" Version="V3">
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Configuration Packages'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="1520,218" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="c7436b30-e998-4660-90b7-b74c4337bdd0" Text="KITTY" Version="V3">
                     <uix:NTypeInto.Target>
                       <uix:TargetAnchorable BrowserURL="https://uat.tfpmy.com/GK/?runinframe=1" CvElementArea="251, 250, 254, 41" CvTextArea="296, 262, 46, 17" CvTextArgument="KITTY" CvType="InputBox" DesignTimeRectangle="298, 253, 163, 34" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'KITTY'" FullSelectorArgument="&lt;webctrl src='https://uat.tfpmy.com/GK/?runinframe=1' tag='IFRAME' /&gt;&lt;webctrl id='SearchBox1576' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://uat.tfpmy.com/GK/?runinframe=1' tag='IFRAME' /&gt;&lt;webctrl id='SearchBox1576' tag='INPUT' type='' class='ms-SearchBox-field field-62' aaname='' /&gt;" Guid="d831f65d-7146-4562-accf-212c5e0dda41" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAKcAAAAmCAYAAACh+ouRAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAGPSURBVHhe7dyxbYNAGIZh7+Q1PIM9CAPQs0SqFG68AhUreAW6kO6iD+UIwcdRcfqE30f6ZYczR/OCkyanr+E7MIzjnD4+H4FhHOcUAFPECVvECVvECVvECVvECVvECVvECVvECVvECVvECVvECVtTnMMwhKqqQtM0v0f+6Nj5fA5d140/3+/3cLvdQt/34zGt5aZt23Hv1Focretzeq/9U+bXxfFtxqkgFEwMU3KR6Hzto/3WPJ/PcLlc/u0ZrZ2va+maqXNwTNk441NxGcSeca6t6Zpb++JYVuOMkSiKpT3jlOUePDXfUzLOGEMMdWnvOJfrPDXf00ucdV2Pr7kY9o5TtM/8RuGp+X5e4ox/PediKBGnPnO9XqebJbcfjin5ta5RPAokpUScor22bhQcVzLO+H4twFJx5q6D40vGKQpCYaTiIE6UsBqnxIiWsREnSsjGKQpIv/fNjxMnStiMUxSJAo3RESdKmOIE3BAnbBEnbBEnbBEnbBEnbBEnbBEnbBEnbBEnbPE/4RnTeYQfXYtTWevjYqsAAAAASUVORK5CYII=" InformativeScreenshot="9beacdce1002c005749fc9d1b9f065f0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='View - Configuration Packages - Dynamics 365 Business Central' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
                         <uix:TargetAnchorable.Anchors>
@@ -169,7 +169,7 @@
                       </uix:TargetAnchorable>
                     </uix:NTypeInto.Target>
                   </uix:NTypeInto>
-                  <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayBefore="3000" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="1516.8,136.8" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="enter" KeyModifiers="None" SpecialKey="True">
+                  <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DelayBefore="3000" DisplayName="Send Hotkey" sap:VirtualizedContainerService.HintSize="1520,137" sap2010:WorkflowViewState.IdRef="SendHotkey_2" Key="enter" KeyModifiers="None" SpecialKey="True">
                     <ui:SendHotkey.Target>
                       <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Selector="{x:Null}" Id="f5595f41-4785-4248-892f-62c34562ccae">
                         <ui:Target.TimeoutMS>
@@ -181,15 +181,15 @@
                       </ui:Target>
                     </ui:SendHotkey.Target>
                   </ui:SendHotkey>
-                  <uix:NCheckState DisplayName="Check App State 'Kitty'" sap:VirtualizedContainerService.HintSize="1516.8,1022.4" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="c7436b30-e998-4660-90b7-b74c4337bdd0" Timeout="300" Version="V3">
+                  <uix:NCheckState DisplayName="Check App State 'Kitty'" sap:VirtualizedContainerService.HintSize="1520,1018" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="c7436b30-e998-4660-90b7-b74c4337bdd0" Timeout="3000" Version="V3">
                     <uix:NCheckState.IfExists>
-                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="1014.4,804" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                      <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="1016,801" sap2010:WorkflowViewState.IdRef="Sequence_5">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'KITTY'" sap:VirtualizedContainerService.HintSize="952,157.6" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c7436b30-e998-4660-90b7-b74c4337bdd0" Version="V3">
+                        <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'KITTY'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c7436b30-e998-4660-90b7-b74c4337bdd0" Version="V3">
                           <uix:NClick.Target>
                             <uix:TargetAnchorable BrowserURL="https://uat.tfpmy.com/GK/?runinframe=1" CvTextArgument="KITTY" CvType="Text" DesignTimeRectangle="257, 390, 50, 31" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'KITTY'" FullSelectorArgument="&lt;webctrl src='https://uat.tfpmy.com/GK/?runinframe=1' tag='IFRAME' /&gt;&lt;webctrl aaname='Config. Packages. Press Ctrl+Enter to move to the next element a*' aria-role='grid' tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://uat.tfpmy.com/GK/?runinframe=1' tag='IFRAME' /&gt;&lt;webctrl aaname='Config. Packages. Press Ctrl+Enter to move to the next element a*' aria-role='grid' tag='TABLE' /&gt;&lt;webctrl type='' tag='A' class='stringcontrol-read value thm-cont-u1-font-size-2--medflat thm-cont-u1-font-stack-2--medflat thm-cont-u1-color-3--medflat thm-cont-u1-color-3--medtint--grid-row-selected thm-cont-u1-color-3--mintint--grid-row-hovered thm-cont-g2-bgcolor-2 thm-cont-s1-bdrcolor--focus thm-cont-s1-outlinecolor--focus' aaname='KITTY' check:innerText='KITTY' /&gt;" Guid="32f3730f-46ae-4ce8-8399-4ee904e291d9" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAAjCAYAAADfXvn1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFPSURBVFhH7ZSxTsNADIbzBLxAeQxeomvfoRJbJLbSDAhmhkqsLFWXstGlTEgMMLB1YWOBpQx5BsMfyZU5+aJepJzkyMOn6mznzt+5SbH5qWmIuJg1XMwaLmYNF7OGi1nDxaxxlNj0cUun1Q0tP7/+xa9e36k4L2l8vzysTy5mtNh90MP3ns5u75p8DOTnL29qTnL5V4NarQeAGHIy1lkMzUOCpYAU4xjD9agJcxLsBwlcjIy3PY/+8IyMdRLjG5JSoE+xWI57CfdNFuO/mHZ432LaHjytsD5ZDAfL6Un6FgvzsWmBJLHJah1tHOQQwz6j6rr5jU0LHC3GXygcrNWAHGKAa2LTAkkTK5+eGzmstbpcYrxXW13yO8bT0xrMJcbvVuyCQbIY1jhckzMvhkNxeChhXgzw5jI+CDHAzbKMOTGLuJg1XMwaLmYNF7NFTb97Eii3aJ3BugAAAABJRU5ErkJggg==" InformativeScreenshot="55742bf1d477a591c5b2cfbc50c9e2ce.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='View - Configuration Packages - Dynamics 365 Business Central' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
                               <uix:TargetAnchorable.Anchors>
@@ -200,15 +200,15 @@
                             </uix:TargetAnchorable>
                           </uix:NClick.Target>
                         </uix:NClick>
-                        <uix:NCheckState DisplayName="Check App State 'KITTY'" sap:VirtualizedContainerService.HintSize="952,491.2" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="c7436b30-e998-4660-90b7-b74c4337bdd0" Version="V3">
+                        <uix:NCheckState DisplayName="Check App State 'KITTY'" sap:VirtualizedContainerService.HintSize="954,489" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="c7436b30-e998-4660-90b7-b74c4337bdd0" Timeout="3000" Version="V3">
                           <uix:NCheckState.IfExists>
-                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,272.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                            <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_7">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Vendor'" sap:VirtualizedContainerService.HintSize="387.2,157.6" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c7436b30-e998-4660-90b7-b74c4337bdd0" Version="V3">
+                              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Vendor'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="c7436b30-e998-4660-90b7-b74c4337bdd0" Version="V3">
                                 <uix:NClick.Target>
                                   <uix:TargetAnchorable BrowserURL="https://uat.tfpmy.com/GK/?runinframe=1" CvTextArgument="Vendor" CvType="Text" DesignTimeRectangle="450, 576, 261, 31" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Vendor'" FullSelectorArgument="&lt;webctrl src='https://uat.tfpmy.com/GK/?runinframe=1' tag='IFRAME' /&gt;&lt;webctrl aaname='Config. Package Subform. Press Ctrl+Enter to move to the next el*' aria-role='grid' tag='TABLE' /&gt;&lt;webctrl tableRow='3' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl src='https://uat.tfpmy.com/GK/?runinframe=1' tag='IFRAME' /&gt;&lt;webctrl aaname='Config. Package Subform. Press Ctrl+Enter to move to the next el*' aria-role='grid' tag='TABLE' /&gt;&lt;webctrl type='' tag='SPAN' class='stringcontrol-read value thm-cont-u1-font-size-2--medflat thm-cont-u1-font-stack-2--medflat thm-cont-u1-color-2--medflat thm-cont-u1-color-2--medtint--grid-row-selected thm-cont-u1-color-2--mintint--grid-row-hovered thm-cont-g2-bgcolor-2 thm-cont-s1-bdrcolor--focus thm-cont-s1-outlinecolor--focus' aaname='Vendor' check:innerText='Vendor' /&gt;" Guid="1bccaa0b-91a9-438c-aead-7ae6adc94ee0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAQkAAAAjCAYAAACHKP+AAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAJxSURBVHhe7doxbiJBEIVhrsI9OARcYlMuwAU4BTk5dyBmVxuYmJQM0l49REnlcnXRXsug1f6fVLanp6fHDupNj+3J5XJpKgDIEBIASpOfv98aRVFUryY/fh1vXwBAREgAKBESAEqEBIASIQGgREgAKBESAEqEBIDSPxES1+u1LZfLtl6v7yMAniUNCWtKlb7OnM/ntlgsntK4hATwOt2dxHa7bbPZrB2Px/vIe/v9vk2n09vn70ZIAK/TDQmFg0JCYZFRw2onoR3FdyMkgNfphkT1yvHMVw0hJIDX6YaE6FUie+XIxrXj0OuHVdyBqMFVtkPpzZO41mazSUPCwsrPjevpWNceDofbfbOfB0BfGRLWhFnD+x2Gjv2rR/aqojlqYn9d9nuNuJbtIjTPh4Rd6+9h9/XzdH4+n7fVavVhRwTgsTIkRA3nGzsGhzWmb3TRed/ssfnFAsCaWmupoeOT3u5p8+w6HxAm7nI0h90D8PcehkRsuqwJfYiYOE8Nbk3uacyu7601GiYSQ0yfYzgBGPcwJGLT+aa2Y237s/psSMS1TQyJGEBeFhLZmgDGPAwJseY9nU7vGlBGm1BrWJN7Phh6a8WQ+OxOYuT7A5AbCgl7cuuvDPEJXj3VvZGQ6K2lY43b9TEIvLgGIQF8zVBIWFPqFSI2uj3ldV7zjJp0t9vdj8ZCIlvLxuK9FQYa80FhYeLHCAnga4ZCQtSgako1Z8bOW8XQ0Hnf5EZjvol9KKjU9PofB43F6y0U/H3j90dIAF8zHBIA/k+EBIASIQGgREgAKBESAEqEBIASIQGgREgAKBESAEq3kNAHiqKovN7aH/cPiW7/CY2dAAAAAElFTkSuQmCC" InformativeScreenshot="ae72562efb653fcbf831be3ecd95bce0.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Edit - Config. Package Card - KITTY - Dynamics 365 Business Central' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
                                     <uix:TargetAnchorable.Anchors>
@@ -222,13 +222,13 @@
                             </Sequence>
                           </uix:NCheckState.IfExists>
                           <uix:NCheckState.IfNotExists>
-                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,200.8" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                            <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,200" sap2010:WorkflowViewState.IdRef="Sequence_8">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="387.2,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;THE SYSTEM IS LOADING INFORMATION, PLEASE WAIT OR TRY AGAIN&quot;]" />
+                              <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="388,85" sap2010:WorkflowViewState.IdRef="MessageBox_3" Text="[&quot;THE SYSTEM IS LOADING INFORMATION, PLEASE WAIT OR TRY AGAIN&quot;]" />
                             </Sequence>
                           </uix:NCheckState.IfNotExists>
                           <uix:NCheckState.Target>
@@ -244,13 +244,13 @@
                       </Sequence>
                     </uix:NCheckState.IfExists>
                     <uix:NCheckState.IfNotExists>
-                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,200.8" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,200" sap2010:WorkflowViewState.IdRef="Sequence_6">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="387.2,85.6" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;THE SYSTEM IS LOADING INFORMATION, PLEASE WAIT OR TRY AGAIN&quot;]" />
+                        <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="388,85" sap2010:WorkflowViewState.IdRef="MessageBox_2" Text="[&quot;THE SYSTEM IS LOADING INFORMATION, PLEASE WAIT OR TRY AGAIN&quot;]" />
                       </Sequence>
                     </uix:NCheckState.IfNotExists>
                     <uix:NCheckState.Target>

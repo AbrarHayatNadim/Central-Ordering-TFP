@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>831,507</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1240,507</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Export_RIQ_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -119,19 +119,24 @@
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="449.6,83.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_4">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'editable text'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="952,218.4" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="3cffce5c-92ed-496f-b7b3-e2668ed3fc20" Text="https://uat.tfpmy.com/GK/" Version="V3">
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'editable text'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="954,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="HardwareEvents" ScopeIdentifier="3cffce5c-92ed-496f-b7b3-e2668ed3fc20" Text="https://uat.tfpmy.com/GK/" Version="V3">
               <uix:NTypeInto.Target>
                 <uix:TargetAnchorable DesignTimeRectangle="186, 59, 1483, 38" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'editable text'" FullSelectorArgument="&lt;ctrl name='New Tab - Google Chrome' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='New Tab - Google Chrome' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' automationid='' /&gt;" Guid="226b7c52-a662-4c15-a1ee-e6dd05730b2b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAABc8AAAAqCAYAAABlX6MsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAGLSURBVHhe7dhBDcJAAETR1cEJEhxio4IqqfcKWC6QZj8SeC/5yWiYcXsdU5IkSZIkSZIkXY1tP6ckSZIkSZIkSboaEwAAAAAAWDjPAQAAAAAgnOcAAAAAABDOcwAAAAAACOc5AAAAAACE8xwAAAAAAGI5z++P52cBAAAAAMD/cp4DAAAAAEA4zwEAAAAAIJznAAAAAAAQznMAAAAAAAjnOQAAAAAAhPMcAAAAAADCeQ4AAAAAAOE8BwAAAACAcJ4DAAAAAEA4zwEAAAAAIJznAAAAAAAQznMAAAAAAAjnOQAAAAAAhPMcAAAAAADCeQ4AAAAAAOE8BwAAAACAcJ4DAAAAAEA4zwEAAAAAIJznAAAAAAAQznMAAAAAAAjnOQAAAAAAhPMcAAAAAADCeQ4AAAAAALGc5wAAAAAAgPMcAAAAAAB+OM8BAAAAACCc5wAAAAAAEM5zAAAAAAAI5zkAAAAAAITzHAAAAAAAwnkOAAAAAADhPAcAAAAAgBjbfk5JkiRJkiRJkvTtnG8W0iCjuHjXFQAAAABJRU5ErkJggg==" InformativeScreenshot="0b2241b3f0e874f1d6496fce3325aec1.png" ScopeSelectorArgument="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='New Tab - Google Chrome' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Version="V2" Visibility="Interactive" />
               </uix:NTypeInto.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NTypeInto>
-            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="952,157.6" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="enter" KeyModifiers="None" SpecialKey="True">
+            <ui:SendHotkey ClickBeforeTyping="{x:Null}" DelayBefore="{x:Null}" DelayBetweenKeys="{x:Null}" DelayMS="{x:Null}" EmptyField="{x:Null}" SendWindowMessages="{x:Null}" Activate="True" DisplayName="Send Hotkey 'editable text'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="SendHotkey_1" Key="enter" KeyModifiers="None" SpecialKey="True">
               <ui:SendHotkey.Target>
                 <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="a48a3932-b5d2-4438-b9ae-98ea9b46a971" InformativeScreenshot="140811dfb8c759049e4c9a9fb5f74e7f" Selector="&lt;wnd app='chrome.exe' cls='Chrome_WidgetWin_1' title='New Tab - Google Chrome' /&gt;&lt;ctrl name='New Tab - Google Chrome' role='pane' /&gt;&lt;ctrl name='Address and search bar' role='editable text' /&gt;">
                   <ui:Target.TimeoutMS>
@@ -142,10 +147,15 @@
                   </ui:Target.WaitForReady>
                 </ui:Target>
               </ui:SendHotkey.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </ui:SendHotkey>
-            <uix:NCheckState DisplayName="Check App State 'Privacy and Cookies'" sap:VirtualizedContainerService.HintSize="952,1409.6" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="3cffce5c-92ed-496f-b7b3-e2668ed3fc20" Timeout="300" Version="V3">
+            <uix:NCheckState DisplayName="Check App State 'Privacy and Cookies'" sap:VirtualizedContainerService.HintSize="954,338" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="3cffce5c-92ed-496f-b7b3-e2668ed3fc20" Timeout="300" Version="V3">
               <uix:NCheckState.IfExists>
-                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="449.6,1191.2" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_2">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -197,7 +207,7 @@
                 </Sequence>
               </uix:NCheckState.IfExists>
               <uix:NCheckState.IfNotExists>
-                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="449.6,200.8" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -209,6 +219,11 @@
               <uix:NCheckState.Target>
                 <uix:TargetAnchorable BrowserURL="https://uat.tfpmy.com/GK/SignIn?ReturnUrl=%2FGK%2F" CvTextArgument="Privacy and Cookies" CvType="Text" DesignTimeRectangle="1029, 600, 117, 17" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Privacy and Cookies'" FullSelectorArgument="&lt;webctrl tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='A' type='' class='' aaname='Privacy and Cookies' check:innerText='Privacy and Cookies' /&gt;" Guid="dae2e4e1-5e3a-4216-b156-8be9f4f9d7d4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHkAAAAVCAYAAABizEFoAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKpSURBVGhD7VZBcsMgDMwb+5S+wYe8Ibcc8ok+IIfemkuvvWU6fQRFIGAlQHEbT+Mm7IxnjAFJu4tlb9zA3WOz2+3cuO77Gm/yA2CY/AAYJj8AhskPgKtMPu6PbrP/4NF/x4ebnt/ckUd/is9399TJvYTGwuTzy6vbPPug+boR6ZtghsnBDNBn++7OPHUVDJOXQGXy08sXj9j0pYisHrbJ8QV4dYdPfkA4vbnpxPfX4JYmC+JcyIHfdiJHrSSsbxSJsaJAve5AOcrbMZ2+3GEb42cYInRjpz3eiDQvuXEr5LnpZJg8ywTJo2qxIUaZF7WI+JF/ermyxgzBV+TA/PIw/tBkmbAUoI2hcUrk7/elG8hvTCws7/M5Dv4+EAECdV0JRuwkqhgX8jpHNLxtpF5bI/Jva0NQPLVeYLLUR8WhAwudtcypeAqmySIhFJKABYi9tLbX5qnQFBPvEWI/EVBtsgeMV9WLQpDoOiYcaIX+IWMo8QOAQ/OQNGoNXVLFMY2EGOIwKNg/XlhYJZoKDKToeVVMI25fPDAW4jbRid2rt5isDbVNFlpooGEZJV6TJ/IKtVL99WHWJguudGVtyrzOdaFdAzqilfXJGCUWCYAmgSCmeH4dxTZrMmJfNlkJ2lifYc0RdB0E2sPPmjxbtdKzRs2RPxx8E9FsfMkWNJn37705QEgTpD2SHBTkx/RNjvBGbP3fq7964l6OXdebcom1HmFsGNmc96aUQyO1oPV5rHlqI6DWwAnyYJwwpw9TAyK3x6Im12QIpY3QNflDgOKmPXFentQgLK6tYMTu1KuFznutv2tGNKDskbVFo9NcpaPgqTRStQberIXWOM7pOJKL1kyYvDZIUwZ+i/WaTKd7RmsauIwVmpxaz5yfjIE5WHW7HlgGw+S7h3Pf6colKtABJ6wAAAAASUVORK5CYII=" InformativeScreenshot="3facfb99f20aeed7baa1e682088e7e55.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Welcome to Dynamics 365 Business Central.' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive" />
               </uix:NCheckState.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </uix:NCheckState>
           </Sequence>
         </ActivityAction>
