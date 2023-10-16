@@ -82,9 +82,7 @@
     </sap:WorkflowViewStateService.ViewState>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Promotion-File-Excel-Manipulation-Part1.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Promotion-File-Excel-Manipulation-Part1.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <OutArgument x:TypeArguments="x:Int32" x:Key="dtOrginialRowCount">
-          <VisualBasicReference x:TypeArguments="x:Int32" ExpressionText="dtOriginalRowCount" />
-        </OutArgument>
+        <OutArgument x:TypeArguments="x:Int32" x:Key="dtOrginialRowCount">[dtOriginalRowCount]</OutArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Excel-manipulation-part-2-promo.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Excel-manipulation-part-2-promo.xaml">
