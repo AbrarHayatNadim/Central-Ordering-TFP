@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1240,3940</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1240,3414</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>OTK_FILE_FORMAT_TO_START_WORK_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -114,31 +114,33 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="OTK_FILE_Extract_Supplier_Code" sap:VirtualizedContainerService.HintSize="916,3875" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="OTK_FILE_Extract_Supplier_Code" sap:VirtualizedContainerService.HintSize="764,3349" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="854,3764" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="702,3238" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_2">
       <ueab:ExcelProcessScopeX.Body>
         <ActivityAction x:TypeArguments="ui:IExcelProcess">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Excel File Selection" sap:VirtualizedContainerService.HintSize="820,3677" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <Sequence DisplayName="Excel File Selection" sap:VirtualizedContainerService.HintSize="668,3151" sap2010:WorkflowViewState.IdRef="Sequence_5">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ueab:ExcelApplicationCard Password="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="758,3566" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" ReadFormatting="DisplayValue" ResizeWindow="None" WorkbookPath="OTK-Final.xlsx">
+            <ueab:ExcelApplicationCard Password="{x:Null}" CreateNewFile="False" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="606,3040" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_1" KeepExcelFileOpen="True" ReadFormatting="DisplayValue" ResizeWindow="Maximize" WorkbookPath="OTK-Final.xlsx">
               <ueab:ExcelApplicationCard.Body>
                 <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                   </ActivityAction.Argument>
-                  <Sequence DisplayName="After Selecting OTK-Final File" sap:VirtualizedContainerService.HintSize="724,3297" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                  <Sequence DisplayName="After Selecting OTK-Final File" sap:VirtualizedContainerService.HintSize="572,2731" sap2010:WorkflowViewState.IdRef="Sequence_4">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="sd:DataTable" Name="supplierCodeDt" />
                       <Variable x:TypeArguments="sd:DataTable" Name="filteredSupplierCodeDt" />
@@ -152,9 +154,16 @@
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="662,169" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Sheet(&quot;OTK-Mailer&quot;).Range(&quot;Z:AA&quot;)]" ReadFormatting="DisplayValue" SaveTo="[supplierCodeDt]" />
-                    <ui:RemoveDuplicateRows DataTable="[supplierCodeDt]" DisplayName="Remove Duplicate Rows" sap:VirtualizedContainerService.HintSize="662,80" sap2010:WorkflowViewState.IdRef="RemoveDuplicateRows_1" OutputDataTable="[supplierCodeDt]" />
-                    <ui:FilterDataTable DataTable="[supplierCodeDt]" DisplayName="Filter Data Table To Get Multiple Code" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="662,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_1" OutputDataTable="[filteredSupplierCodeDt]" SelectColumnsMode="Remove">
+                    <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="510,169" sap2010:WorkflowViewState.IdRef="ReadRangeX_1" Range="[Excel.Sheet(&quot;OTK-Mailer&quot;).Range(&quot;Z:AA&quot;)]" ReadFormatting="DisplayValue" SaveTo="[supplierCodeDt]" />
+                    <ui:RemoveDuplicateRows DataTable="[supplierCodeDt]" DisplayName="Remove Duplicate Rows" sap:VirtualizedContainerService.HintSize="510,80" sap2010:WorkflowViewState.IdRef="RemoveDuplicateRows_1" OutputDataTable="[supplierCodeDt]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ui:RemoveDuplicateRows>
+                    <ui:FilterDataTable DataTable="[supplierCodeDt]" DisplayName="Filter Data Table To Get Multiple Code" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="510,52" sap2010:WorkflowViewState.IdRef="FilterDataTable_3" OutputDataTable="[filteredSupplierCodeDt]" SelectColumnsMode="Remove">
                       <ui:FilterDataTable.Filters>
                         <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                           <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
@@ -172,8 +181,14 @@
                           <x:Null />
                         </scg:List>
                       </ui:FilterDataTable.SelectColumns>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
                     </ui:FilterDataTable>
-                    <ui:FilterDataTable DataTable="[supplierCodeDt]" DisplayName="Removed Multiple Code Data Table " FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="662,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_2" OutputDataTable="[supplierCodeDt]" SelectColumnsMode="Remove">
+                    <ui:FilterDataTable DataTable="[supplierCodeDt]" DisplayName="Removed Multiple Code Data Table " FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="510,52" sap2010:WorkflowViewState.IdRef="FilterDataTable_4" OutputDataTable="[supplierCodeDt]" SelectColumnsMode="Remove">
                       <ui:FilterDataTable.Filters>
                         <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                           <ui:FilterOperationArgument BooleanOperator="And" Operator="CONTAINS">
@@ -191,8 +206,14 @@
                           <x:Null />
                         </scg:List>
                       </ui:FilterDataTable.SelectColumns>
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
                     </ui:FilterDataTable>
-                    <ueab:InsertSheetX DisplayName="Insert Sheet Supplier Code" sap:VirtualizedContainerService.HintSize="662,186" sap2010:WorkflowViewState.IdRef="InsertSheetX_3" Name="SupplierCode" Workbook="[Excel]">
+                    <ueab:InsertSheetX DisplayName="Insert Sheet Supplier Code" sap:VirtualizedContainerService.HintSize="510,186" sap2010:WorkflowViewState.IdRef="InsertSheetX_3" Name="SupplierCode" Workbook="[Excel]">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -200,15 +221,15 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ueab:InsertSheetX>
-                    <ueab:InsertSheetX DisplayName="Insert Sheet Supplier Multiple Code" sap:VirtualizedContainerService.HintSize="662,186" sap2010:WorkflowViewState.IdRef="InsertSheetX_4" Name="Supplier Multiple Code" Workbook="[Excel]">
+                    <ueab:InsertSheetX DisplayName="Insert Sheet Supplier Multiple Code" sap:VirtualizedContainerService.HintSize="510,52" sap2010:WorkflowViewState.IdRef="InsertSheetX_5" Name="Supplier Multiple Code" Workbook="[Excel]">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ueab:InsertSheetX>
-                    <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;SupplierCode&quot;)]" DisplayName="Write DataTable Supplier Code" sap:VirtualizedContainerService.HintSize="662,159" sap2010:WorkflowViewState.IdRef="WriteRangeX_3" IgnoreEmptySource="False" Source="[supplierCodeDt]">
+                    <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;SupplierCode&quot;)]" DisplayName="Write DataTable Supplier Code" sap:VirtualizedContainerService.HintSize="510,159" sap2010:WorkflowViewState.IdRef="WriteRangeX_3" IgnoreEmptySource="False" Source="[supplierCodeDt]">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -216,14 +237,14 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ueab:WriteRangeX>
-                    <ui:BuildDataTable DataTable="[finalMultipleSupplierCodeForAppend]" DisplayName="Datatable for Append On Non Multiple Sheet" sap:VirtualizedContainerService.HintSize="662,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Supplier_x0020_Code&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Supplier_x0020_Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
-                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[filteredSupplierCodeDt]" DisplayName="For Each Row in Multiple Supplier Code" sap:VirtualizedContainerService.HintSize="662,52" sap2010:WorkflowViewState.IdRef="ForEachRow_2">
+                    <ui:BuildDataTable DataTable="[finalMultipleSupplierCodeForAppend]" DisplayName="Datatable for Append On Non Multiple Sheet" sap:VirtualizedContainerService.HintSize="510,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_2" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Supplier_x0020_Code&quot; msdata:Caption=&quot;&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Supplier_x0020_Name&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;100&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;" />
+                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[filteredSupplierCodeDt]" DisplayName="For Each Row in Multiple Supplier Code" sap:VirtualizedContainerService.HintSize="510,52" sap2010:WorkflowViewState.IdRef="ForEachRow_6">
                       <ui:ForEachRow.Body>
                         <ActivityAction x:TypeArguments="sd:DataRow">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Extracting Supplier Code From Multiple " sap:VirtualizedContainerService.HintSize="628,1040" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                          <Sequence DisplayName="Extracting Supplier Code From Multiple " sap:VirtualizedContainerService.HintSize="376,270" sap2010:WorkflowViewState.IdRef="Sequence_7">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="s:String[]" Default="[New String (){}]" Name="supplierForOPPOMIOPS" />
                             </Sequence.Variables>
@@ -233,7 +254,7 @@
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <If Condition="[CurrentRow.Item(0).ToString.Contains(&quot;OPP&quot;) OR CurrentRow.Item(0).ToString.Contains(&quot;OPS&quot;) OR CurrentRow.Item(0).ToString.Contains(&quot;OMI&quot;)]" sap:VirtualizedContainerService.HintSize="586,952" sap2010:WorkflowViewState.IdRef="If_1">
+                            <If Condition="[CurrentRow.Item(0).ToString.Contains(&quot;OPP&quot;) OR CurrentRow.Item(0).ToString.Contains(&quot;OPS&quot;) OR CurrentRow.Item(0).ToString.Contains(&quot;OMI&quot;)]" sap:VirtualizedContainerService.HintSize="334,182" sap2010:WorkflowViewState.IdRef="If_1">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -352,19 +373,26 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:ForEachRow>
-                    <ui:RemoveDuplicateRows DataTable="[finalMultipleSupplierCodeForAppend]" DisplayName="Remove Duplicate Rows" sap:VirtualizedContainerService.HintSize="662,80" sap2010:WorkflowViewState.IdRef="RemoveDuplicateRows_2" OutputDataTable="[finalMultipleSupplierCodeForAppend]" />
-                    <ueab:WriteRangeX Append="True" Destination="[Excel.Sheet(&quot;SupplierCode&quot;)]" DisplayName="Write DataTable to Excel" ExcludeHeaders="True" sap:VirtualizedContainerService.HintSize="662,159" sap2010:WorkflowViewState.IdRef="WriteRangeX_5" IgnoreEmptySource="False" Source="[finalMultipleSupplierCodeForAppend]" />
-                    <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Supplier Multiple Code&quot;)]" DisplayName="Write DataTable Supplier Multiple Code" sap:VirtualizedContainerService.HintSize="662,159" sap2010:WorkflowViewState.IdRef="WriteRangeX_4" IgnoreEmptySource="False" Source="[filteredSupplierCodeDt]">
+                    <ui:RemoveDuplicateRows DataTable="[finalMultipleSupplierCodeForAppend]" DisplayName="Remove Duplicate Rows" sap:VirtualizedContainerService.HintSize="510,80" sap2010:WorkflowViewState.IdRef="RemoveDuplicateRows_3" OutputDataTable="[finalMultipleSupplierCodeForAppend]" />
+                    <ueab:WriteRangeX Append="True" Destination="[Excel.Sheet(&quot;SupplierCode&quot;)]" DisplayName="Write DataTable to Excel" ExcludeHeaders="True" sap:VirtualizedContainerService.HintSize="510,52" sap2010:WorkflowViewState.IdRef="WriteRangeX_6" IgnoreEmptySource="False" Source="[finalMultipleSupplierCodeForAppend]">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ueab:WriteRangeX>
-                    <ueab:RemoveDuplicatesX Columns="{x:Null}" ColumnsCompareMode="AllColumns" DisplayName="Remove Duplicates" sap:VirtualizedContainerService.HintSize="662,186" sap2010:WorkflowViewState.IdRef="RemoveDuplicatesX_1" Range="[Excel.Sheet(&quot;SupplierCode&quot;)]" />
-                    <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="662,169" sap2010:WorkflowViewState.IdRef="ReadRangeX_2" Range="[Excel.Sheet(&quot;SupplierCode&quot;)]" ReadFormatting="DisplayValue" SaveTo="[transposeDt]" />
-                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[transposeDt]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="662,356" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
+                    <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;Supplier Multiple Code&quot;)]" DisplayName="Write DataTable Supplier Multiple Code" sap:VirtualizedContainerService.HintSize="510,52" sap2010:WorkflowViewState.IdRef="WriteRangeX_7" IgnoreEmptySource="False" Source="[filteredSupplierCodeDt]">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </ueab:WriteRangeX>
+                    <ueab:RemoveDuplicatesX Columns="{x:Null}" ColumnsCompareMode="AllColumns" DisplayName="Remove Duplicates" sap:VirtualizedContainerService.HintSize="510,186" sap2010:WorkflowViewState.IdRef="RemoveDuplicatesX_1" Range="[Excel.Sheet(&quot;SupplierCode&quot;)]" />
+                    <ueab:ReadRangeX DisplayName="Read Range" sap:VirtualizedContainerService.HintSize="510,169" sap2010:WorkflowViewState.IdRef="ReadRangeX_2" Range="[Excel.Sheet(&quot;SupplierCode&quot;)]" ReadFormatting="DisplayValue" SaveTo="[transposeDt]" />
+                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[transposeDt]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="510,356" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
                       <ui:ForEachRow.Body>
                         <ActivityAction x:TypeArguments="sd:DataRow">
                           <ActivityAction.Argument>
@@ -395,7 +423,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:ForEachRow>
-                    <Assign sap:VirtualizedContainerService.HintSize="662,82" sap2010:WorkflowViewState.IdRef="Assign_9">
+                    <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_9">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:String">[transposeSupplierCode]</OutArgument>
                       </Assign.To>
@@ -403,10 +431,16 @@
                         <InArgument x:TypeArguments="x:String">[trim(transposeSupplierCode.Remove(0,1).ToString)]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="662,141" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[transposeSupplierCode]" />
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="LogMessage_11" Level="[UiPath.Core.Activities.LogLevel.Info]" Message="[transposeSupplierCode]" />
                   </Sequence>
                 </ActivityAction>
               </ueab:ExcelApplicationCard.Body>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
             </ueab:ExcelApplicationCard>
           </Sequence>
         </ActivityAction>
