@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1240,20835</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1240,20799</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Excel_manipulation_part_2_promo_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -117,7 +117,7 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Excel_manipulation_part_2_promo" sap:VirtualizedContainerService.HintSize="992,20770" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Excel_manipulation_part_2_promo" sap:VirtualizedContainerService.HintSize="992,20734" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="retainVendorListLSFile" />
       <Variable x:TypeArguments="sd:DataTable" Name="promoWorkFileBeforePromoCode" />
@@ -235,7 +235,24 @@ Select r=maxMember).CopyToDataTable]</InArgument>
     </Assign>
     <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" DataTable="[itemStatusLinkLSFile]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="930,116" sap2010:WorkflowViewState.IdRef="WriteRange_4" SheetName="Item Status Link" WorkbookPath="Item-Status-Link-Updated.xlsx" />
     <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" DataTable="[itemStatusLinkALLStoreLSFile]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="930,116" sap2010:WorkflowViewState.IdRef="WriteRange_5" SheetName="Item Status Link ALL" WorkbookPath="Item-Status-Link-Updated.xlsx" />
-    <ui:ReadRange DataTable="{x:Null}" Range="{x:Null}" AddHeaders="True" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="930,88" sap2010:WorkflowViewState.IdRef="ReadRange_5" SheetName="TFP 1051 Available Stock (Auto)" WorkbookPath="TFP 1051 Available Stock (Auto).xlsx" />
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="930,52" sap2010:WorkflowViewState.IdRef="CommentOut_8">
+      <ui:CommentOut.Body>
+        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,199" sap2010:WorkflowViewState.IdRef="Sequence_63">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:ReadRange DataTable="{x:Null}" Range="{x:Null}" AddHeaders="True" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="388,88" sap2010:WorkflowViewState.IdRef="ReadRange_5" SheetName="TFP 1051 Available Stock (Auto)" WorkbookPath="TFP 1051 Available Stock (Auto).xlsx" />
+        </Sequence>
+      </ui:CommentOut.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:CommentOut>
     <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="930,18226" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_4">
       <ueab:ExcelProcessScopeX.Body>
         <ActivityAction x:TypeArguments="ui:IExcelProcess">
