@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="RIQ_DOWNLOAD_NEW_FULL" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1292,6954" sap2010:WorkflowViewState.IdRef="RIQ_DOWNLOAD_NEW_FULL_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="RIQ_DOWNLOAD_NEW_FULL" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1047,15583" sap2010:WorkflowViewState.IdRef="RIQ_DOWNLOAD_NEW_FULL_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System.ComponentModel.TypeConverter" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -91,13 +91,13 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="RIQ_DOWNLOAD_NEW_FULL" sap:VirtualizedContainerService.HintSize="1057,7361" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="RIQ_DOWNLOAD_NEW_FULL" sap:VirtualizedContainerService.HintSize="1057,15518" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="Main Workflow" sap:VirtualizedContainerService.HintSize="995,7250" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="Main Workflow" sap:VirtualizedContainerService.HintSize="995,15407" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
         <Variable x:TypeArguments="sd:DataTable" Name="otk_new_file" />
         <Variable x:TypeArguments="x:Int32" Name="indexof_last_columntokeep" />
@@ -118,13 +118,13 @@
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" DisplayName="Choose File Type" sap:VirtualizedContainerService.HintSize="933,7139" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1" ShowExcelWindow="True">
+      <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" DisplayName="Choose File Type" sap:VirtualizedContainerService.HintSize="933,15296" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_1" ShowExcelWindow="True">
         <ueab:ExcelProcessScopeX.Body>
           <ActivityAction x:TypeArguments="ui:IExcelProcess">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="899,7052" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="899,15209" sap2010:WorkflowViewState.IdRef="Sequence_3">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="strOtk" />
                 <Variable x:TypeArguments="sd:DataTable" Name="otkFinalDt" />
@@ -781,12 +781,12 @@
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
               </ui:CommentOut>
-              <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="837,6345" sap2010:WorkflowViewState.IdRef="IfElseIf_5">
+              <ui:IfElseIf DisplayName="Else If" sap:VirtualizedContainerService.HintSize="837,14828" sap2010:WorkflowViewState.IdRef="IfElseIf_5">
                 <ui:IfElseIf.ConditionBlocks>
                   <sc:BindingList x:TypeArguments="ui:IfElseIfBlock" AllowEdit="True" AllowNew="True" AllowRemove="True" RaiseListChangedEvents="True">
                     <ui:IfElseIfBlock BlockType="If" Condition="[filePathPromoFile.Contains(&quot;OTK&quot;)]">
                       <ui:IfElseIfBlock.Then>
-                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="496,3712" sap2010:WorkflowViewState.IdRef="Sequence_10">
                           <Sequence.Variables>
                             <Variable x:TypeArguments="x:Int32" Name="checkForNoOfBranchCode" />
                             <Variable x:TypeArguments="x:Int32" Name="noOFColumsToTake" />
@@ -795,7 +795,7 @@
                           </Sequence.Variables>
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               <x:Boolean x:Key="IsPinned">False</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
@@ -1245,13 +1245,13 @@
                     </ui:IfElseIfBlock>
                     <ui:IfElseIfBlock BlockType="ElseIf" Condition="[filePathPromoFile.Contains(&quot;VG&quot;)]">
                       <ui:IfElseIfBlock.Then>
-                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="786,5714" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="634,4458" sap2010:WorkflowViewState.IdRef="Sequence_11">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="724,5603" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="572,4347" sap2010:WorkflowViewState.IdRef="Sequence_16">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="sd:DataTable" Name="storeCodeDT" />
                               <Variable x:TypeArguments="x:Int32" Name="checkForNoOfBranchCode" />
@@ -1264,10 +1264,10 @@
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="662,75" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[filePathPromoFile]" />
-                            <ui:ReadRange Range="{x:Null}" AddHeaders="False" DataTable="[otk_mailer_original]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="662,88" sap2010:WorkflowViewState.IdRef="ReadRange_10" SheetName="Village Grocer Mailer" WorkbookPath="[filePathPromoFile]" />
-                            <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[storeCodeDT]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="662,88" sap2010:WorkflowViewState.IdRef="ReadRange_19" SheetName="VG" WorkbookPath="Store Codes.xlsx" />
-                            <Assign sap:VirtualizedContainerService.HintSize="662,82" sap2010:WorkflowViewState.IdRef="Assign_21">
+                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="510,75" sap2010:WorkflowViewState.IdRef="MessageBox_4" Text="[filePathPromoFile]" />
+                            <ui:ReadRange Range="{x:Null}" AddHeaders="False" DataTable="[otk_mailer_original]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="510,88" sap2010:WorkflowViewState.IdRef="ReadRange_10" SheetName="Village Grocer Mailer" WorkbookPath="[filePathPromoFile]" />
+                            <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[storeCodeDT]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="510,88" sap2010:WorkflowViewState.IdRef="ReadRange_19" SheetName="VG" WorkbookPath="Store Codes.xlsx" />
+                            <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_21">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="sd:DataTable">[otk_mailer_original_without_empty_rows]</OutArgument>
                               </Assign.To>
@@ -1275,7 +1275,7 @@
                                 <InArgument x:TypeArguments="sd:DataTable">[otk_mailer_original.Rows.Cast(Of DataRow)().Where(Function(row) Not row.ItemArray.All(Function(field) field Is DBNull.Value Or field.Equals(""))).CopyToDataTable()]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <Assign sap:VirtualizedContainerService.HintSize="662,82" sap2010:WorkflowViewState.IdRef="Assign_22">
+                            <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_22">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="sd:DataTable">[otk_mailer_original_without_empty_rows]</OutArgument>
                               </Assign.To>
@@ -1283,7 +1283,7 @@
                                 <InArgument x:TypeArguments="sd:DataTable">[otk_mailer_original_without_empty_rows.AsEnumerable.Skip(2).CopyToDataTable()]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <ui:RemoveDataRow Row="{x:Null}" DataTable="[otk_mailer_original_without_empty_rows]" DisplayName="Remove Data Row" sap:VirtualizedContainerService.HintSize="662,186" sap2010:WorkflowViewState.IdRef="RemoveDataRow_19" RowIndex="0">
+                            <ui:RemoveDataRow Row="{x:Null}" DataTable="[otk_mailer_original_without_empty_rows]" DisplayName="Remove Data Row" sap:VirtualizedContainerService.HintSize="510,186" sap2010:WorkflowViewState.IdRef="RemoveDataRow_19" RowIndex="0">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1291,7 +1291,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:RemoveDataRow>
-                            <ui:RemoveDataRow Row="{x:Null}" DataTable="[otk_mailer_original_without_empty_rows]" DisplayName="Remove Data Row" sap:VirtualizedContainerService.HintSize="662,186" sap2010:WorkflowViewState.IdRef="RemoveDataRow_20" RowIndex="1">
+                            <ui:RemoveDataRow Row="{x:Null}" DataTable="[otk_mailer_original_without_empty_rows]" DisplayName="Remove Data Row" sap:VirtualizedContainerService.HintSize="510,186" sap2010:WorkflowViewState.IdRef="RemoveDataRow_20" RowIndex="1">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1299,23 +1299,23 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:RemoveDataRow>
-                            <Assign sap:VirtualizedContainerService.HintSize="662,82" sap2010:WorkflowViewState.IdRef="Assign_56">
+                            <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_56">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Int32">[checkForNoOfBranchCode]</OutArgument>
                               </Assign.To>
                               <Assign.Value>
-                                <InArgument x:TypeArguments="x:Int32">32</InArgument>
+                                <InArgument x:TypeArguments="x:Int32">31</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <Assign sap:VirtualizedContainerService.HintSize="662,82" sap2010:WorkflowViewState.IdRef="Assign_57">
+                            <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_57">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Int32">[noOFColumsToTake]</OutArgument>
                               </Assign.To>
                               <Assign.Value>
-                                <InArgument x:TypeArguments="x:Int32">32</InArgument>
+                                <InArgument x:TypeArguments="x:Int32">31</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <Assign sap:VirtualizedContainerService.HintSize="662,82" sap2010:WorkflowViewState.IdRef="Assign_58">
+                            <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_58">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="sd:DataTable">[firstRowDT]</OutArgument>
                               </Assign.To>
@@ -1323,13 +1323,13 @@
                                 <InArgument x:TypeArguments="sd:DataTable">[otk_mailer_original_without_empty_rows.AsEnumerable.Take(1).CopyToDataTable]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[storeCodeDT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="662,1308" sap2010:WorkflowViewState.IdRef="ForEachRow_9">
+                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[storeCodeDT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="510,52" sap2010:WorkflowViewState.IdRef="ForEachRow_9">
                               <ui:ForEachRow.Body>
                                 <ActivityAction x:TypeArguments="sd:DataRow">
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                                   </ActivityAction.Argument>
-                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="628,1122" sap2010:WorkflowViewState.IdRef="Sequence_63">
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,438" sap2010:WorkflowViewState.IdRef="Sequence_63">
                                     <Sequence.Variables>
                                       <Variable x:TypeArguments="x:Int32" Name="counter" />
                                     </Sequence.Variables>
@@ -1338,7 +1338,7 @@
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <Assign sap:VirtualizedContainerService.HintSize="586,82" sap2010:WorkflowViewState.IdRef="Assign_59">
+                                    <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_59">
                                       <Assign.To>
                                         <OutArgument x:TypeArguments="x:Int32">[counter]</OutArgument>
                                       </Assign.To>
@@ -1346,7 +1346,7 @@
                                         <InArgument x:TypeArguments="x:Int32">30</InArgument>
                                       </Assign.Value>
                                     </Assign>
-                                    <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[counter &lt; firstRowDT.ColumnCount]" DisplayName="While" sap:VirtualizedContainerService.HintSize="586,820" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_10">
+                                    <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[counter &lt; firstRowDT.ColumnCount]" DisplayName="While" sap:VirtualizedContainerService.HintSize="434,136" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_10">
                                       <ui:InterruptibleWhile.Body>
                                         <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="552,684" sap2010:WorkflowViewState.IdRef="Sequence_58">
                                           <Sequence.Variables>
@@ -1420,7 +1420,7 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </ui:InterruptibleWhile>
-                                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="586,52" sap2010:WorkflowViewState.IdRef="CommentOut_16">
+                                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="CommentOut_16">
                                       <ui:CommentOut.Body>
                                         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,319" sap2010:WorkflowViewState.IdRef="Sequence_62">
                                           <sap:WorkflowViewStateService.ViewState>
@@ -1464,12 +1464,12 @@
                               </ui:ForEachRow.Body>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:ForEachRow>
-                            <Assign sap:VirtualizedContainerService.HintSize="662,82" sap2010:WorkflowViewState.IdRef="Assign_23">
+                            <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_23">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Int32">[column_length_otk_new_file]</OutArgument>
                               </Assign.To>
@@ -1477,7 +1477,7 @@
                                 <InArgument x:TypeArguments="x:Int32">[otk_mailer_original_without_empty_rows.Columns.Count -1]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <Assign sap:VirtualizedContainerService.HintSize="662,82" sap2010:WorkflowViewState.IdRef="Assign_24">
+                            <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_24">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Int32">[indexof_last_columntokeep]</OutArgument>
                               </Assign.To>
@@ -1485,7 +1485,7 @@
                                 <InArgument x:TypeArguments="x:Int32">[noOFColumsToTake]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[column_length_otk_new_file &gt; indexof_last_columntokeep]" DisplayName="While" sap:VirtualizedContainerService.HintSize="662,511" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_4">
+                            <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[column_length_otk_new_file &gt; indexof_last_columntokeep]" DisplayName="While" sap:VirtualizedContainerService.HintSize="510,511" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_4">
                               <ui:InterruptibleWhile.Body>
                                 <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,375" sap2010:WorkflowViewState.IdRef="Sequence_15">
                                   <sap:WorkflowViewStateService.ViewState>
@@ -1522,7 +1522,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:InterruptibleWhile>
-                            <Assign sap:VirtualizedContainerService.HintSize="662,82" sap2010:WorkflowViewState.IdRef="Assign_26">
+                            <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_26">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="sd:DataTable">[otk_mailer_original_without_empty_rows]</OutArgument>
                               </Assign.To>
@@ -1530,7 +1530,7 @@
                                 <InArgument x:TypeArguments="sd:DataTable">[otk_mailer_original_without_empty_rows.Rows.Cast(Of DataRow)().Where(Function(row) Not row.ItemArray.All(Function(field) field Is DBNull.Value Or field.Equals(""))).CopyToDataTable()]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" DataTable="[otk_mailer_original_without_empty_rows]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="662,116" sap2010:WorkflowViewState.IdRef="WriteRange_10" SheetName="VG_Mailer" WorkbookPath="VG_Mailer_Without_Empty_Rows.xlsx">
+                            <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" DataTable="[otk_mailer_original_without_empty_rows]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="510,116" sap2010:WorkflowViewState.IdRef="WriteRange_10" SheetName="VG_Mailer" WorkbookPath="VG_Mailer_Without_Empty_Rows.xlsx">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1538,7 +1538,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:WriteRange>
-                            <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[otkFinalDt]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="662,88" sap2010:WorkflowViewState.IdRef="ReadRange_11" SheetName="VG_Mailer" WorkbookPath="VG_Mailer_Without_Empty_Rows.xlsx">
+                            <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[otkFinalDt]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="510,88" sap2010:WorkflowViewState.IdRef="ReadRange_11" SheetName="VG_Mailer" WorkbookPath="VG_Mailer_Without_Empty_Rows.xlsx">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1546,7 +1546,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:ReadRange>
-                            <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[otkFinalDt]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="662,116" sap2010:WorkflowViewState.IdRef="WriteRange_11" SheetName="VG MAILER" WorkbookPath="VG-NEW.xlsx">
+                            <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[otkFinalDt]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="510,116" sap2010:WorkflowViewState.IdRef="WriteRange_11" SheetName="VG MAILER" WorkbookPath="VG-NEW.xlsx">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1554,7 +1554,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:WriteRange>
-                            <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[otkFinalDtFinal]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="662,88" sap2010:WorkflowViewState.IdRef="ReadRange_12" SheetName="VG MAILER" WorkbookPath="VG-NEW.xlsx">
+                            <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[otkFinalDtFinal]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="510,88" sap2010:WorkflowViewState.IdRef="ReadRange_12" SheetName="VG MAILER" WorkbookPath="VG-NEW.xlsx">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1562,7 +1562,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:ReadRange>
-                            <ui:FilterDataTable DataTable="[otkFinalDtFinal]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="662,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_13" OutputDataTable="[otkFinalDtFinal]" SelectColumnsMode="Remove">
+                            <ui:FilterDataTable DataTable="[otkFinalDtFinal]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="510,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_13" OutputDataTable="[otkFinalDtFinal]" SelectColumnsMode="Remove">
                               <ui:FilterDataTable.Filters>
                                 <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                                   <ui:FilterOperationArgument BooleanOperator="And" Operator="STARTSWITH">
@@ -1587,7 +1587,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:FilterDataTable>
-                            <ui:FilterDataTable DataTable="[otkFinalDtFinal]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="662,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_14" OutputDataTable="[otkFinalDtFinal]" SelectColumnsMode="Remove">
+                            <ui:FilterDataTable DataTable="[otkFinalDtFinal]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="510,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_14" OutputDataTable="[otkFinalDtFinal]" SelectColumnsMode="Remove">
                               <ui:FilterDataTable.Filters>
                                 <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                                   <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
@@ -1620,7 +1620,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:FilterDataTable>
-                            <ui:FilterDataTable DataTable="[otkFinalDtFinal]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="662,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_15" OutputDataTable="[otkFinalDtFinal]" SelectColumnsMode="Remove">
+                            <ui:FilterDataTable DataTable="[otkFinalDtFinal]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="510,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_15" OutputDataTable="[otkFinalDtFinal]" SelectColumnsMode="Remove">
                               <ui:FilterDataTable.Filters>
                                 <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                                   <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
@@ -1639,7 +1639,7 @@
                                 </scg:List>
                               </ui:FilterDataTable.SelectColumns>
                             </ui:FilterDataTable>
-                            <ui:FilterDataTable DataTable="[otkFinalDtFinal]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="662,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_16" OutputDataTable="[otkFinalDtFinal]" SelectColumnsMode="Remove">
+                            <ui:FilterDataTable DataTable="[otkFinalDtFinal]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="510,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_16" OutputDataTable="[otkFinalDtFinal]" SelectColumnsMode="Remove">
                               <ui:FilterDataTable.Filters>
                                 <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                                   <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
@@ -1674,7 +1674,7 @@
                                 </scg:List>
                               </ui:FilterDataTable.SelectColumns>
                             </ui:FilterDataTable>
-                            <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[otkFinalDtFinal]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="662,116" sap2010:WorkflowViewState.IdRef="WriteRange_12" SheetName="VG-Mailer" WorkbookPath="VG-Final.xlsx">
+                            <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[otkFinalDtFinal]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="510,116" sap2010:WorkflowViewState.IdRef="WriteRange_12" SheetName="VG-Mailer" WorkbookPath="VG-Final.xlsx">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1682,12 +1682,14 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:WriteRange>
-                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="VG-FILE-Extract-Supplier-Code-New.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="662,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="VG-FILE-Extract-Supplier-Code-New.xaml">
+                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="VG-FILE-Extract-Supplier-Code-New.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="510,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="VG-FILE-Extract-Supplier-Code-New.xaml">
                               <ui:InvokeWorkflowFile.Arguments>
-                                <OutArgument x:TypeArguments="x:String" x:Key="transposeSupplierCode">[supplierCode]</OutArgument>
+                                <OutArgument x:TypeArguments="x:String" x:Key="transposeSupplierCode">
+                                  <VisualBasicReference x:TypeArguments="x:String" ExpressionText="supplierCode" />
+                                </OutArgument>
                               </ui:InvokeWorkflowFile.Arguments>
                             </ui:InvokeWorkflowFile>
-                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="VG-Export-RIQ-File-New-Full.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="662,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="VG-Export-RIQ-File-New-Full.xaml">
+                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="VG-Export-RIQ-File-New-Full.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="510,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="VG-Export-RIQ-File-New-Full.xaml">
                               <ui:InvokeWorkflowFile.Arguments>
                                 <InArgument x:TypeArguments="x:String" x:Key="in_supplier_code">[supplierCode]</InArgument>
                               </ui:InvokeWorkflowFile.Arguments>
@@ -1698,29 +1700,30 @@
                     </ui:IfElseIfBlock>
                     <ui:IfElseIfBlock BlockType="Else">
                       <ui:IfElseIfBlock.Then>
-                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="512,192" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="786,6300" sap2010:WorkflowViewState.IdRef="Sequence_12">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="450,81" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                          <Sequence DisplayName="BIG BODY" sap:VirtualizedContainerService.HintSize="724,6189" sap2010:WorkflowViewState.IdRef="Sequence_21">
                             <Sequence.Variables>
                               <Variable x:TypeArguments="sd:DataTable" Name="storeCodeDT" />
                               <Variable x:TypeArguments="x:Int32" Name="checkForNoOfBranchCode" />
                               <Variable x:TypeArguments="x:Int32" Name="noOFColumsToTake" />
                               <Variable x:TypeArguments="sd:DataTable" Name="firstRowDT" />
+                              <Variable x:TypeArguments="x:Int32" Name="lastColumnNumber" />
                             </Sequence.Variables>
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="434,75" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[filePathPromoFile]" />
-                            <ui:ReadRange Range="{x:Null}" AddHeaders="False" DataTable="[otk_mailer_original]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="434,88" sap2010:WorkflowViewState.IdRef="ReadRange_13" PreserveFormat="True" SheetName="BIG MAILER" WorkbookPath="[filePathPromoFile]" />
-                            <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[storeCodeDT]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="434,88" sap2010:WorkflowViewState.IdRef="ReadRange_16" SheetName="Big" WorkbookPath="Store Codes.xlsx" />
-                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_27">
+                            <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Box" sap:VirtualizedContainerService.HintSize="662,75" sap2010:WorkflowViewState.IdRef="MessageBox_5" Text="[filePathPromoFile]" />
+                            <ui:ReadRange Range="{x:Null}" AddHeaders="False" DataTable="[otk_mailer_original]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="662,88" sap2010:WorkflowViewState.IdRef="ReadRange_13" PreserveFormat="True" SheetName="BIG MAILER" WorkbookPath="[filePathPromoFile]" />
+                            <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[storeCodeDT]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="662,88" sap2010:WorkflowViewState.IdRef="ReadRange_16" SheetName="Big" WorkbookPath="Store Codes.xlsx" />
+                            <Assign sap:VirtualizedContainerService.HintSize="662,82" sap2010:WorkflowViewState.IdRef="Assign_27">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="sd:DataTable">[otk_mailer_original_without_empty_rows]</OutArgument>
                               </Assign.To>
@@ -1728,7 +1731,7 @@
                                 <InArgument x:TypeArguments="sd:DataTable">[otk_mailer_original.Rows.Cast(Of DataRow)().Where(Function(row) Not row.ItemArray.All(Function(field) field Is DBNull.Value Or field.Equals(""))).CopyToDataTable()]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_28">
+                            <Assign sap:VirtualizedContainerService.HintSize="662,82" sap2010:WorkflowViewState.IdRef="Assign_28">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="sd:DataTable">[otk_mailer_original_without_empty_rows]</OutArgument>
                               </Assign.To>
@@ -1736,7 +1739,7 @@
                                 <InArgument x:TypeArguments="sd:DataTable">[otk_mailer_original_without_empty_rows.AsEnumerable.Skip(2).CopyToDataTable()]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <ui:RemoveDataRow Row="{x:Null}" DataTable="[otk_mailer_original_without_empty_rows]" DisplayName="Remove Data Row" sap:VirtualizedContainerService.HintSize="434,186" sap2010:WorkflowViewState.IdRef="RemoveDataRow_11" RowIndex="0">
+                            <ui:RemoveDataRow Row="{x:Null}" DataTable="[otk_mailer_original_without_empty_rows]" DisplayName="Remove Data Row" sap:VirtualizedContainerService.HintSize="662,186" sap2010:WorkflowViewState.IdRef="RemoveDataRow_11" RowIndex="0">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1744,7 +1747,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:RemoveDataRow>
-                            <ui:RemoveDataRow Row="{x:Null}" DataTable="[otk_mailer_original_without_empty_rows]" DisplayName="Remove Data Row" sap:VirtualizedContainerService.HintSize="434,186" sap2010:WorkflowViewState.IdRef="RemoveDataRow_13" RowIndex="1">
+                            <ui:RemoveDataRow Row="{x:Null}" DataTable="[otk_mailer_original_without_empty_rows]" DisplayName="Remove Data Row" sap:VirtualizedContainerService.HintSize="662,186" sap2010:WorkflowViewState.IdRef="RemoveDataRow_13" RowIndex="1">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1752,23 +1755,23 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:RemoveDataRow>
-                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_34">
+                            <Assign sap:VirtualizedContainerService.HintSize="662,82" sap2010:WorkflowViewState.IdRef="Assign_34">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Int32">[checkForNoOfBranchCode]</OutArgument>
                               </Assign.To>
                               <Assign.Value>
-                                <InArgument x:TypeArguments="x:Int32">32</InArgument>
+                                <InArgument x:TypeArguments="x:Int32">31</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_35">
+                            <Assign sap:VirtualizedContainerService.HintSize="662,82" sap2010:WorkflowViewState.IdRef="Assign_35">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Int32">[noOFColumsToTake]</OutArgument>
                               </Assign.To>
                               <Assign.Value>
-                                <InArgument x:TypeArguments="x:Int32">32</InArgument>
+                                <InArgument x:TypeArguments="x:Int32">31</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_36">
+                            <Assign sap:VirtualizedContainerService.HintSize="662,82" sap2010:WorkflowViewState.IdRef="Assign_36">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="sd:DataTable">[firstRowDT]</OutArgument>
                               </Assign.To>
@@ -1776,13 +1779,13 @@
                                 <InArgument x:TypeArguments="sd:DataTable">[otk_mailer_original_without_empty_rows.AsEnumerable.Take(1).CopyToDataTable]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[storeCodeDT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
+                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[storeCodeDT]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="662,1489" sap2010:WorkflowViewState.IdRef="ForEachRow_5">
                               <ui:ForEachRow.Body>
                                 <ActivityAction x:TypeArguments="sd:DataRow">
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                                   </ActivityAction.Argument>
-                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="552,952" sap2010:WorkflowViewState.IdRef="Sequence_43">
+                                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="628,1303" sap2010:WorkflowViewState.IdRef="Sequence_43">
                                     <Sequence.Variables>
                                       <Variable x:TypeArguments="x:Int32" Name="counter" />
                                     </Sequence.Variables>
@@ -1791,17 +1794,17 @@
                                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                       </scg:Dictionary>
                                     </sap:WorkflowViewStateService.ViewState>
-                                    <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_38">
+                                    <Assign sap:VirtualizedContainerService.HintSize="586,82" sap2010:WorkflowViewState.IdRef="Assign_38">
                                       <Assign.To>
                                         <OutArgument x:TypeArguments="x:Int32">[counter]</OutArgument>
                                       </Assign.To>
                                       <Assign.Value>
-                                        <InArgument x:TypeArguments="x:Int32">30</InArgument>
+                                        <InArgument x:TypeArguments="x:Int32">31</InArgument>
                                       </Assign.Value>
                                     </Assign>
-                                    <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[counter &lt; firstRowDT.ColumnCount]" DisplayName="While" sap:VirtualizedContainerService.HintSize="510,650" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_6">
+                                    <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[counter &lt; firstRowDT.ColumnCount]" DisplayName="While" sap:VirtualizedContainerService.HintSize="586,1001" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_6">
                                       <ui:InterruptibleWhile.Body>
-                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,514" sap2010:WorkflowViewState.IdRef="Sequence_38">
+                                        <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="552,865" sap2010:WorkflowViewState.IdRef="Sequence_38">
                                           <Sequence.Variables>
                                             <Variable x:TypeArguments="x:String" Name="columnName" />
                                           </Sequence.Variables>
@@ -1810,7 +1813,7 @@
                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                             </scg:Dictionary>
                                           </sap:WorkflowViewStateService.ViewState>
-                                          <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_39">
+                                          <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_39">
                                             <Assign.To>
                                               <OutArgument x:TypeArguments="x:String">[columnName]</OutArgument>
                                             </Assign.To>
@@ -1818,7 +1821,7 @@
                                               <InArgument x:TypeArguments="x:String">[trim(firstRowDT.Rows(0).Item(counter).ToString)]</InArgument>
                                             </Assign.Value>
                                           </Assign>
-                                          <If Condition="[Trim(columnName.ToString).Equals(CurrentRow(0).ToString) = true]" sap:VirtualizedContainerService.HintSize="434,182" sap2010:WorkflowViewState.IdRef="If_5">
+                                          <If Condition="[Trim(columnName.ToString).Equals(CurrentRow(0).ToString) = true]" sap:VirtualizedContainerService.HintSize="510,533" sap2010:WorkflowViewState.IdRef="If_5">
                                             <sap:WorkflowViewStateService.ViewState>
                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1857,7 +1860,7 @@
                                               </Sequence>
                                             </If.Else>
                                           </If>
-                                          <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_41">
+                                          <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_41">
                                             <Assign.To>
                                               <OutArgument x:TypeArguments="x:Int32">[counter]</OutArgument>
                                             </Assign.To>
@@ -1874,7 +1877,7 @@
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </ui:InterruptibleWhile>
-                                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="510,52" sap2010:WorkflowViewState.IdRef="CommentOut_13">
+                                    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="586,52" sap2010:WorkflowViewState.IdRef="CommentOut_13">
                                       <ui:CommentOut.Body>
                                         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,319" sap2010:WorkflowViewState.IdRef="Sequence_42">
                                           <sap:WorkflowViewStateService.ViewState>
@@ -1918,12 +1921,12 @@
                               </ui:ForEachRow.Body>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:ForEachRow>
-                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_29">
+                            <Assign sap:VirtualizedContainerService.HintSize="662,82" sap2010:WorkflowViewState.IdRef="Assign_29">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Int32">[column_length_otk_new_file]</OutArgument>
                               </Assign.To>
@@ -1931,7 +1934,7 @@
                                 <InArgument x:TypeArguments="x:Int32">[otk_mailer_original_without_empty_rows.Columns.Count -1]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_30">
+                            <Assign sap:VirtualizedContainerService.HintSize="662,82" sap2010:WorkflowViewState.IdRef="Assign_30">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="x:Int32">[indexof_last_columntokeep]</OutArgument>
                               </Assign.To>
@@ -1939,7 +1942,7 @@
                                 <InArgument x:TypeArguments="x:Int32">[noOFColumsToTake]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[column_length_otk_new_file &gt; indexof_last_columntokeep]" DisplayName="While" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_5">
+                            <ui:InterruptibleWhile CurrentIndex="{x:Null}" Condition="[column_length_otk_new_file &gt; indexof_last_columntokeep]" DisplayName="While" sap:VirtualizedContainerService.HintSize="662,398" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_5">
                               <ui:InterruptibleWhile.Body>
                                 <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="476,262" sap2010:WorkflowViewState.IdRef="Sequence_19">
                                   <sap:WorkflowViewStateService.ViewState>
@@ -1971,12 +1974,12 @@
                               </ui:InterruptibleWhile.Body>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:InterruptibleWhile>
-                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_32">
+                            <Assign sap:VirtualizedContainerService.HintSize="662,82" sap2010:WorkflowViewState.IdRef="Assign_32">
                               <Assign.To>
                                 <OutArgument x:TypeArguments="sd:DataTable">[otk_mailer_original_without_empty_rows]</OutArgument>
                               </Assign.To>
@@ -1984,7 +1987,7 @@
                                 <InArgument x:TypeArguments="sd:DataTable">[otk_mailer_original_without_empty_rows.Rows.Cast(Of DataRow)().Where(Function(row) Not row.ItemArray.All(Function(field) field Is DBNull.Value Or field.Equals(""))).CopyToDataTable()]</InArgument>
                               </Assign.Value>
                             </Assign>
-                            <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" DataTable="[otk_mailer_original_without_empty_rows]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="WriteRange_13" SheetName="BIG Mailer" WorkbookPath="BIG_Mailer_Without_Empty_Rows.xlsx">
+                            <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" DataTable="[otk_mailer_original_without_empty_rows]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="662,116" sap2010:WorkflowViewState.IdRef="WriteRange_13" SheetName="BIG Mailer" WorkbookPath="BIG_Mailer_Without_Empty_Rows.xlsx">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1992,7 +1995,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:WriteRange>
-                            <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[otkFinalDt]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="434,88" sap2010:WorkflowViewState.IdRef="ReadRange_14" SheetName="BIG Mailer" WorkbookPath="BIG_Mailer_Without_Empty_Rows.xlsx">
+                            <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[otkFinalDt]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="662,88" sap2010:WorkflowViewState.IdRef="ReadRange_14" SheetName="BIG Mailer" WorkbookPath="BIG_Mailer_Without_Empty_Rows.xlsx">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2000,7 +2003,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:ReadRange>
-                            <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[otkFinalDt]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="WriteRange_14" SheetName="BIG MAILER" WorkbookPath="BIG-NEW.xlsx">
+                            <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[otkFinalDt]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="662,116" sap2010:WorkflowViewState.IdRef="WriteRange_14" SheetName="BIG MAILER" WorkbookPath="BIG-NEW.xlsx">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2008,7 +2011,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:WriteRange>
-                            <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[otkFinalDtFinal]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="434,88" sap2010:WorkflowViewState.IdRef="ReadRange_15" SheetName="BIG MAILER" WorkbookPath="BIG-NEW.xlsx">
+                            <ui:ReadRange Range="{x:Null}" AddHeaders="True" DataTable="[otkFinalDtFinal]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="662,88" sap2010:WorkflowViewState.IdRef="ReadRange_15" SheetName="BIG MAILER" WorkbookPath="BIG-NEW.xlsx">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2016,7 +2019,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:ReadRange>
-                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[otkFinalDtFinal]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="434,52" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
+                            <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[otkFinalDtFinal]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="662,356" sap2010:WorkflowViewState.IdRef="ForEachRow_3">
                               <ui:ForEachRow.Body>
                                 <ActivityAction x:TypeArguments="sd:DataRow">
                                   <ActivityAction.Argument>
@@ -2041,12 +2044,12 @@
                               </ui:ForEachRow.Body>
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:ForEachRow>
-                            <ui:FilterDataTable DataTable="[otkFinalDtFinal]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="434,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_17" OutputDataTable="[otkFinalDtFinal]" SelectColumnsMode="Remove">
+                            <ui:FilterDataTable DataTable="[otkFinalDtFinal]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="662,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_17" OutputDataTable="[otkFinalDtFinal]" SelectColumnsMode="Remove">
                               <ui:FilterDataTable.Filters>
                                 <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                                   <ui:FilterOperationArgument BooleanOperator="And" Operator="STARTSWITH">
@@ -2071,7 +2074,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:FilterDataTable>
-                            <ui:FilterDataTable DataTable="[otkFinalDtFinal]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="434,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_18" OutputDataTable="[otkFinalDtFinal]" SelectColumnsMode="Remove">
+                            <ui:FilterDataTable DataTable="[otkFinalDtFinal]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="662,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_18" OutputDataTable="[otkFinalDtFinal]" SelectColumnsMode="Remove">
                               <ui:FilterDataTable.Filters>
                                 <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                                   <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
@@ -2120,7 +2123,7 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:FilterDataTable>
-                            <ui:FilterDataTable DataTable="[otkFinalDtFinal]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="434,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_19" OutputDataTable="[otkFinalDtFinal]" SelectColumnsMode="Remove">
+                            <ui:FilterDataTable DataTable="[otkFinalDtFinal]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="662,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_19" OutputDataTable="[otkFinalDtFinal]" SelectColumnsMode="Remove">
                               <ui:FilterDataTable.Filters>
                                 <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                                   <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
@@ -2139,7 +2142,7 @@
                                 </scg:List>
                               </ui:FilterDataTable.SelectColumns>
                             </ui:FilterDataTable>
-                            <ui:FilterDataTable DataTable="[otkFinalDtFinal]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="434,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_20" OutputDataTable="[otkFinalDtFinal]" SelectColumnsMode="Remove">
+                            <ui:FilterDataTable DataTable="[otkFinalDtFinal]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="662,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_20" OutputDataTable="[otkFinalDtFinal]" SelectColumnsMode="Remove">
                               <ui:FilterDataTable.Filters>
                                 <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                                   <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
@@ -2158,7 +2161,7 @@
                                 </scg:List>
                               </ui:FilterDataTable.SelectColumns>
                             </ui:FilterDataTable>
-                            <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[otkFinalDtFinal]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="434,116" sap2010:WorkflowViewState.IdRef="WriteRange_15" SheetName="BIG-Mailer" WorkbookPath="BIG-Final.xlsx">
+                            <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[otkFinalDtFinal]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="662,116" sap2010:WorkflowViewState.IdRef="WriteRange_15" SheetName="BIG-Mailer" WorkbookPath="BIG-Final.xlsx">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2166,6 +2169,28 @@
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
                             </ui:WriteRange>
+                            <Assign sap:VirtualizedContainerService.HintSize="662,82" sap2010:WorkflowViewState.IdRef="Assign_63">
+                              <Assign.To>
+                                <OutArgument x:TypeArguments="x:Int32">[lastColumnNumber]</OutArgument>
+                              </Assign.To>
+                              <Assign.Value>
+                                <InArgument x:TypeArguments="x:Int32">[indexof_last_columntokeep]</InArgument>
+                              </Assign.Value>
+                            </Assign>
+                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="BIG-FILE-Extract-Supplier-Code.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="662,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="BIG-FILE-Extract-Supplier-Code.xaml">
+                              <ui:InvokeWorkflowFile.Arguments>
+                                <OutArgument x:TypeArguments="x:String" x:Key="transposeSupplierCode">
+                                  <VisualBasicReference x:TypeArguments="x:String" ExpressionText="supplierCode" />
+                                </OutArgument>
+                              </ui:InvokeWorkflowFile.Arguments>
+                            </ui:InvokeWorkflowFile>
+                            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="VG-Export-RIQ-File-New-Full.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="662,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="VG-Export-RIQ-File-New-Full.xaml">
+                              <ui:InvokeWorkflowFile.Arguments>
+                                <InArgument x:TypeArguments="x:String" x:Key="in_supplier_code">
+                                  <VisualBasicValue x:TypeArguments="x:String" ExpressionText="supplierCode" />
+                                </InArgument>
+                              </ui:InvokeWorkflowFile.Arguments>
+                            </ui:InvokeWorkflowFile>
                           </Sequence>
                         </Sequence>
                       </ui:IfElseIfBlock.Then>
