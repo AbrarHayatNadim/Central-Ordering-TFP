@@ -5,7 +5,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1240,8482</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>1240,11741</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>Excel_Manipulation__Part_1_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -119,7 +119,7 @@
       <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Excel_Manipulation__Part_1" sap:VirtualizedContainerService.HintSize="1108,8417" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Excel_Manipulation__Part_1" sap:VirtualizedContainerService.HintSize="1108,11676" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="promotionFileOriginal" />
       <Variable x:TypeArguments="sd:DataTable" Name="muiltipleVendorCodeDt" />
@@ -133,25 +133,25 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Work With Promotion File " sap:VirtualizedContainerService.HintSize="1046,8306" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_3">
+    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Work With Promotion File " sap:VirtualizedContainerService.HintSize="1046,11565" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_3">
       <ueab:ExcelProcessScopeX.Body>
         <ActivityAction x:TypeArguments="ui:IExcelProcess">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1012,8219" sap2010:WorkflowViewState.IdRef="Sequence_6">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1012,11478" sap2010:WorkflowViewState.IdRef="Sequence_6">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <ueab:ExcelApplicationCard Password="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="950,8108" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" KeepExcelFileOpen="True" ReadFormatting="DisplayValue" ResizeWindow="Maximize" WorkbookPath="VG-Final.xlsx">
+            <ueab:ExcelApplicationCard Password="{x:Null}" DisplayName="Use Excel File" sap:VirtualizedContainerService.HintSize="950,11367" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_2" KeepExcelFileOpen="True" ReadFormatting="DisplayValue" ResizeWindow="Maximize" WorkbookPath="VG-Final.xlsx">
               <ueab:ExcelApplicationCard.Body>
                 <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                   </ActivityAction.Argument>
-                  <Sequence sap:VirtualizedContainerService.HintSize="916,7839" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <Sequence sap:VirtualizedContainerService.HintSize="916,11098" sap2010:WorkflowViewState.IdRef="Sequence_7">
                     <Sequence.Variables>
                       <Variable x:TypeArguments="sd:DataTable" Name="originalMailerDt" />
                       <Variable x:TypeArguments="sd:DataTable" Name="headerPromoFileDt" />
@@ -302,13 +302,13 @@
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="sd:DataColumn" Name="currentItem" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="452,672" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                          <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,270" sap2010:WorkflowViewState.IdRef="Sequence_31">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <If Condition="[idx &gt; 30 AND idx &lt;= promotionFileOriginal.ColumnCount -1]" sap:VirtualizedContainerService.HintSize="410,584" sap2010:WorkflowViewState.IdRef="If_3">
+                            <If Condition="[idx &gt; 30 AND idx &lt;= promotionFileOriginal.ColumnCount -1]" sap:VirtualizedContainerService.HintSize="334,182" sap2010:WorkflowViewState.IdRef="If_3">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -346,7 +346,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:ForEach>
-                    <Assign sap:VirtualizedContainerService.HintSize="854,83" sap2010:WorkflowViewState.IdRef="Assign_10">
+                    <Assign sap:VirtualizedContainerService.HintSize="854,82" sap2010:WorkflowViewState.IdRef="Assign_10">
                       <Assign.To>
                         <OutArgument x:TypeArguments="s:String[]">[columnRetrieveArr]</OutArgument>
                       </Assign.To>
@@ -354,7 +354,7 @@
                         <InArgument x:TypeArguments="s:String[]">[columnsToRetrieve.ToArray]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <Assign sap:VirtualizedContainerService.HintSize="854,83" sap2010:WorkflowViewState.IdRef="Assign_9">
+                    <Assign sap:VirtualizedContainerService.HintSize="854,82" sap2010:WorkflowViewState.IdRef="Assign_9">
                       <Assign.To>
                         <OutArgument x:TypeArguments="sd:DataTable">[newDt]</OutArgument>
                       </Assign.To>
@@ -362,7 +362,7 @@
                         <InArgument x:TypeArguments="sd:DataTable">[promotionFileOriginal.DefaultView.ToTable(false,columnRetrieveArr)]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <Assign sap:VirtualizedContainerService.HintSize="854,83" sap2010:WorkflowViewState.IdRef="Assign_11">
+                    <Assign sap:VirtualizedContainerService.HintSize="854,82" sap2010:WorkflowViewState.IdRef="Assign_11">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Int32">[storeColumnsNo]</OutArgument>
                       </Assign.To>
@@ -370,7 +370,7 @@
                         <InArgument x:TypeArguments="x:Int32">[newDt.ColumnCount - 9]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <Assign sap:VirtualizedContainerService.HintSize="854,83" sap2010:WorkflowViewState.IdRef="Assign_12">
+                    <Assign sap:VirtualizedContainerService.HintSize="854,82" sap2010:WorkflowViewState.IdRef="Assign_12">
                       <Assign.To>
                         <OutArgument x:TypeArguments="sd:DataTable">[promotionFileOriginal]</OutArgument>
                       </Assign.To>
@@ -378,7 +378,7 @@
                         <InArgument x:TypeArguments="sd:DataTable">[newDt]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <ui:BuildDataTable DataTable="[headerPromoFileDt]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="854,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_5" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Item_x0020_Code&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;1000&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Description&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;10000&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;D&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;E&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Normal_x0020_Cost&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Promo_x0020_Cost&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Scan_x0020_Rebates&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Vendor_x0020_Code&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Vendor_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Store&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Forecast_x0020_Qty&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;_x0036_0_x002F_30&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;OM&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;TM&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Order_x0020_CTN&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Order_x0020_Unit&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;OHB&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;DC_x0020_Vendor&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;ITEM_x0020_STATUS&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;ADS&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;DOH&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;ADOH&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Remarks&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Promo_x0020_Type&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
+                    <ui:BuildDataTable DataTable="[headerPromoFileDt]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="854,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_5" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Item_x0020_Code&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;1000&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Description&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;10000&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;D&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;E&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Normal_x0020_Cost&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Promo_x0020_Cost&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Scan_x0020_Rebates&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Vendor_x0020_Code&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Vendor_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Store&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Forecast_x0020_Qty&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;_x0036_0_x002F_30&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;OM&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;TM&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Order_x0020_CTN&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Order_x0020_Unit&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;OHB&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;DC_x0020_Vendor&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;ITEM_x0020_STATUS&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;ADS&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;DOH&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;ADOH&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Remarks&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Promo_x0020_Type&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -386,7 +386,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:BuildDataTable>
-                    <ui:ForEach x:TypeArguments="sd:DataColumn" CurrentIndex="[idxCount]" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="854,53" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[promotionFileOriginal.Columns]">
+                    <ui:ForEach x:TypeArguments="sd:DataColumn" CurrentIndex="[idxCount]" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="854,2738" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[promotionFileOriginal.Columns]">
                       <ui:ForEach.Body>
                         <ActivityAction x:TypeArguments="sd:DataColumn">
                           <ActivityAction.Argument>
@@ -553,12 +553,12 @@
                       </ui:ForEach.Body>
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:ForEach>
-                    <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;WORK&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="854,53" sap2010:WorkflowViewState.IdRef="WriteRangeX_19" IgnoreEmptySource="False" Source="[headerPromoFileDt]">
+                    <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;WORK&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="854,52" sap2010:WorkflowViewState.IdRef="WriteRangeX_19" IgnoreEmptySource="False" Source="[headerPromoFileDt]">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -574,7 +574,7 @@
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:ReadRange>
-                    <Assign sap:VirtualizedContainerService.HintSize="854,83" sap2010:WorkflowViewState.IdRef="Assign_66">
+                    <Assign sap:VirtualizedContainerService.HintSize="854,82" sap2010:WorkflowViewState.IdRef="Assign_66">
                       <Assign.To>
                         <OutArgument x:TypeArguments="sd:DataTable">[retainVendorListLSFile]</OutArgument>
                       </Assign.To>
@@ -591,7 +591,7 @@
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:WriteRange>
                     <ui:ReadRange Range="{x:Null}" AddHeaders="False" DataTable="[itemMasterListLSFile]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="854,88" sap2010:WorkflowViewState.IdRef="ReadRange_6" SheetName="Item" WorkbookPath="Item-Master-List.xlsx" />
-                    <Assign sap:VirtualizedContainerService.HintSize="854,83" sap2010:WorkflowViewState.IdRef="Assign_67">
+                    <Assign sap:VirtualizedContainerService.HintSize="854,82" sap2010:WorkflowViewState.IdRef="Assign_67">
                       <Assign.To>
                         <OutArgument x:TypeArguments="sd:DataTable">[itemMasterListLSFile]</OutArgument>
                       </Assign.To>
@@ -601,7 +601,7 @@
                     </Assign>
                     <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" DataTable="[itemMasterListLSFile]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="854,116" sap2010:WorkflowViewState.IdRef="WriteRange_7" SheetName="Item" WorkbookPath="Item-Master-List-Updated.xlsx" />
                     <ui:ReadRange Range="{x:Null}" AddHeaders="False" DataTable="[replenItemQuantityLSFile]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="854,88" sap2010:WorkflowViewState.IdRef="ReadRange_7" SheetName="Replen. Item Quantities" WorkbookPath="Replen. Item Quantity.xlsx" />
-                    <Assign sap:VirtualizedContainerService.HintSize="854,83" sap2010:WorkflowViewState.IdRef="Assign_68">
+                    <Assign sap:VirtualizedContainerService.HintSize="854,82" sap2010:WorkflowViewState.IdRef="Assign_68">
                       <Assign.To>
                         <OutArgument x:TypeArguments="sd:DataTable">[replenItemQuantityLSFile]</OutArgument>
                       </Assign.To>
@@ -611,7 +611,7 @@
                     </Assign>
                     <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" DataTable="[replenItemQuantityLSFile]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="854,116" sap2010:WorkflowViewState.IdRef="WriteRange_8" SheetName="Replen. Item Quantity" WorkbookPath="Replen-Item-Quantity-Updated.xlsx" />
                     <ui:ReadRange Range="{x:Null}" AddHeaders="False" DataTable="[itemStatusLinkLSFile]" DisplayName="Read Range Workbook" sap:VirtualizedContainerService.HintSize="854,88" sap2010:WorkflowViewState.IdRef="ReadRange_8" SheetName="Item Status Link" WorkbookPath="Item Status Link.xlsx" />
-                    <Assign sap:VirtualizedContainerService.HintSize="854,83" sap2010:WorkflowViewState.IdRef="Assign_69">
+                    <Assign sap:VirtualizedContainerService.HintSize="854,82" sap2010:WorkflowViewState.IdRef="Assign_69">
                       <Assign.To>
                         <OutArgument x:TypeArguments="sd:DataTable">[itemStatusLinkLSFile]</OutArgument>
                       </Assign.To>
@@ -619,7 +619,7 @@
                         <InArgument x:TypeArguments="sd:DataTable">[itemStatusLinkLSFile.AsEnumerable.Skip(3).CopyToDataTable]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <ui:FilterDataTable DataTable="[itemStatusLinkLSFile]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="854,163" sap2010:WorkflowViewState.IdRef="FilterDataTable_15" OutputDataTable="[itemStatusLinkALLStoreLSFile]" SelectColumnsMode="Remove">
+                    <ui:FilterDataTable DataTable="[itemStatusLinkLSFile]" DisplayName="Filter Data Table" FilterRowsMode="Keep" sap:VirtualizedContainerService.HintSize="854,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_15" OutputDataTable="[itemStatusLinkALLStoreLSFile]" SelectColumnsMode="Remove">
                       <ui:FilterDataTable.Filters>
                         <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                           <ui:FilterOperationArgument BooleanOperator="And" Operator="EQ">
@@ -638,7 +638,7 @@
                         </scg:List>
                       </ui:FilterDataTable.SelectColumns>
                     </ui:FilterDataTable>
-                    <ui:FilterDataTable DataTable="[itemStatusLinkALLStoreLSFile]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="854,163" sap2010:WorkflowViewState.IdRef="FilterDataTable_16" OutputDataTable="[itemStatusLinkALLStoreLSFile]" SelectColumnsMode="Remove">
+                    <ui:FilterDataTable DataTable="[itemStatusLinkALLStoreLSFile]" DisplayName="Filter Data Table" FilterRowsMode="Remove" sap:VirtualizedContainerService.HintSize="854,161" sap2010:WorkflowViewState.IdRef="FilterDataTable_16" OutputDataTable="[itemStatusLinkALLStoreLSFile]" SelectColumnsMode="Remove">
                       <ui:FilterDataTable.Filters>
                         <scg:List x:TypeArguments="ui:FilterOperationArgument" Capacity="4">
                           <ui:FilterOperationArgument Operand="{x:Null}" BooleanOperator="And" Operator="EMPTY">
@@ -654,7 +654,7 @@
                         </scg:List>
                       </ui:FilterDataTable.SelectColumns>
                     </ui:FilterDataTable>
-                    <Assign sap:VirtualizedContainerService.HintSize="854,84" sap2010:WorkflowViewState.IdRef="Assign_70">
+                    <Assign sap:VirtualizedContainerService.HintSize="854,83" sap2010:WorkflowViewState.IdRef="Assign_70">
                       <Assign.To>
                         <OutArgument x:TypeArguments="sd:DataTable">[itemStatusLinkALLStoreLSFile]</OutArgument>
                       </Assign.To>
@@ -667,34 +667,34 @@ Select r=maxMember).CopyToDataTable]</InArgument>
                     </Assign>
                     <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" DataTable="[itemStatusLinkLSFile]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="854,116" sap2010:WorkflowViewState.IdRef="WriteRange_9" SheetName="Item Status Link" WorkbookPath="Item-Status-Link-Updated.xlsx" />
                     <ui:WriteRange StartingCell="{x:Null}" AddHeaders="False" DataTable="[itemStatusLinkALLStoreLSFile]" DisplayName="Write Range Workbook" sap:VirtualizedContainerService.HintSize="854,116" sap2010:WorkflowViewState.IdRef="WriteRange_10" SheetName="Item Status Link ALL" WorkbookPath="Item-Status-Link-Updated.xlsx" />
-                    <ui:BuildDataTable DataTable="[multipleVendorCodeNewDT]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="854,52" sap2010:WorkflowViewState.IdRef="BuildDataTable_6" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Item_x0020_Code&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;1000&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;Description&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xA;                  &lt;xs:simpleType&gt;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xA;                      &lt;xs:maxLength value=&quot;10000&quot; /&gt;&#xA;                    &lt;/xs:restriction&gt;&#xA;                  &lt;/xs:simpleType&gt;&#xA;                &lt;/xs:element&gt;&#xA;                &lt;xs:element name=&quot;D&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;E&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Normal_x0020_Cost&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Promo_x0020_Cost&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Scan_x0020_Rebates&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Vendor_x0020_Code&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Vendor_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Store&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Forecast_x0020_Qty&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;_x0036_0_x002F_30&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;OM&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;TM&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Order_x0020_CTN&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Order_x0020_Unit&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;OHB&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;DC_x0020_Vendor&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;ITEM_x0020_STATUS&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;ADS&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;DOH&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;ADOH&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Remarks&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Promo_x0020_Type&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
+                    <ui:BuildDataTable DataTable="[multipleVendorCodeNewDT]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="854,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_6" TableInfo="&lt;NewDataSet&gt;&#xD;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xD;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xD;&#xA;      &lt;xs:complexType&gt;&#xD;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xD;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xD;&#xA;            &lt;xs:complexType&gt;&#xD;&#xA;              &lt;xs:sequence&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Item_x0020_Code&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;1000&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Description&quot; msdata:Caption=&quot;&quot; minOccurs=&quot;0&quot;&gt;&#xD;&#xA;                  &lt;xs:simpleType&gt;&#xD;&#xA;                    &lt;xs:restriction base=&quot;xs:string&quot;&gt;&#xD;&#xA;                      &lt;xs:maxLength value=&quot;10000&quot; /&gt;&#xD;&#xA;                    &lt;/xs:restriction&gt;&#xD;&#xA;                  &lt;/xs:simpleType&gt;&#xD;&#xA;                &lt;/xs:element&gt;&#xD;&#xA;                &lt;xs:element name=&quot;D&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;E&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Normal_x0020_Cost&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Promo_x0020_Cost&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Scan_x0020_Rebates&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Vendor_x0020_Code&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Vendor_x0020_Name&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Store&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Forecast_x0020_Qty&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;_x0036_0_x002F_30&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;OM&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;TM&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Order_x0020_CTN&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Order_x0020_Unit&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;OHB&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;DC_x0020_Vendor&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;ITEM_x0020_STATUS&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;ADS&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;DOH&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;ADOH&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Remarks&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;                &lt;xs:element name=&quot;Promo_x0020_Type&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xD;&#xA;              &lt;/xs:sequence&gt;&#xD;&#xA;            &lt;/xs:complexType&gt;&#xD;&#xA;          &lt;/xs:element&gt;&#xD;&#xA;        &lt;/xs:choice&gt;&#xD;&#xA;      &lt;/xs:complexType&gt;&#xD;&#xA;    &lt;/xs:element&gt;&#xD;&#xA;  &lt;/xs:schema&gt;&#xD;&#xA;&lt;/NewDataSet&gt;">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
                     </ui:BuildDataTable>
-                    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="854,2219" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_5">
+                    <ueab:ExcelProcessScopeX DisplayAlerts="{x:Null}" ExistingProcessAction="{x:Null}" FileConflictResolution="{x:Null}" LaunchMethod="{x:Null}" LaunchTimeout="{x:Null}" MacroSettings="{x:Null}" ProcessMode="{x:Null}" ShowExcelWindow="{x:Null}" DisplayName="Excel Process Scope" sap:VirtualizedContainerService.HintSize="854,2799" sap2010:WorkflowViewState.IdRef="ExcelProcessScopeX_5">
                       <ueab:ExcelProcessScopeX.Body>
                         <ActivityAction x:TypeArguments="ui:IExcelProcess">
                           <ActivityAction.Argument>
                             <DelegateInArgument x:TypeArguments="ui:IExcelProcess" Name="ExcelProcessScopeTag" />
                           </ActivityAction.Argument>
-                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="602,2132" sap2010:WorkflowViewState.IdRef="Sequence_48">
+                          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="602,2712" sap2010:WorkflowViewState.IdRef="Sequence_48">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 <x:Boolean x:Key="IsPinned">False</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="VG Final Use Excel File" sap:VirtualizedContainerService.HintSize="540,2021" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" WorkbookPath="VG-Final.xlsx">
+                            <ueab:ExcelApplicationCard Password="{x:Null}" ReadFormatting="{x:Null}" DisplayName="VG Final Use Excel File" sap:VirtualizedContainerService.HintSize="540,2601" sap2010:WorkflowViewState.IdRef="ExcelApplicationCard_3" ResizeWindow="None" WorkbookPath="VG-Final.xlsx">
                               <ueab:ExcelApplicationCard.Body>
                                 <ActivityAction x:TypeArguments="ue:IWorkbookQuickHandle">
                                   <ActivityAction.Argument>
                                     <DelegateInArgument x:TypeArguments="ue:IWorkbookQuickHandle" Name="Excel" />
                                   </ActivityAction.Argument>
-                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="506,1752" sap2010:WorkflowViewState.IdRef="Sequence_47">
+                                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="506,2332" sap2010:WorkflowViewState.IdRef="Sequence_47">
                                     <Sequence.Variables>
                                       <Variable x:TypeArguments="sd:DataTable" Name="promoWorkFileBeforePromoCode" />
                                       <Variable x:TypeArguments="x:String" Name="strItemLocation" />
@@ -1399,7 +1399,7 @@ Select r=maxMember).CopyToDataTable]</InArgument>
                                                 <InArgument x:TypeArguments="x:String">[strTransferMultiple]</InArgument>
                                               </Assign.Value>
                                             </Assign>
-                                            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_84">
+                                            <Assign sap:VirtualizedContainerService.HintSize="434,80" sap2010:WorkflowViewState.IdRef="Assign_84">
                                               <Assign.To>
                                                 <OutArgument x:TypeArguments="x:String">[strItemLocation]</OutArgument>
                                               </Assign.To>
@@ -1809,7 +1809,7 @@ Select r=maxMember).CopyToDataTable]</InArgument>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </ueab:ReadRangeX>
-                                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[workSheetDT]" DisplayName="Enter Data to SDW Sheet" sap:VirtualizedContainerService.HintSize="444,52" sap2010:WorkflowViewState.IdRef="ForEachRow_6">
+                                    <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[workSheetDT]" DisplayName="Enter Data to SDW Sheet" sap:VirtualizedContainerService.HintSize="444,418" sap2010:WorkflowViewState.IdRef="ForEachRow_6">
                                       <ui:ForEachRow.Body>
                                         <ActivityAction x:TypeArguments="sd:DataRow">
                                           <ActivityAction.Argument>
@@ -2114,23 +2114,23 @@ Select r=maxMember).CopyToDataTable]</InArgument>
                                       </ui:ForEachRow.Body>
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </ui:ForEachRow>
-                                    <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;SDW&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="444,52" sap2010:WorkflowViewState.IdRef="WriteRangeX_30" IgnoreEmptySource="False" Source="[sdwHeaderDT]">
+                                    <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;SDW&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="444,159" sap2010:WorkflowViewState.IdRef="WriteRangeX_30" IgnoreEmptySource="False" Source="[sdwHeaderDT]">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
                                     </ueab:WriteRangeX>
-                                    <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;ALLOCATION-SITI&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="444,52" sap2010:WorkflowViewState.IdRef="WriteRangeX_31" IgnoreEmptySource="False" Source="[allocationDT]">
+                                    <ueab:WriteRangeX Destination="[Excel.Sheet(&quot;ALLOCATION-SITI&quot;)]" DisplayName="Write DataTable to Excel" sap:VirtualizedContainerService.HintSize="444,159" sap2010:WorkflowViewState.IdRef="WriteRangeX_31" IgnoreEmptySource="False" Source="[allocationDT]">
                                       <sap:WorkflowViewStateService.ViewState>
                                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                           <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                         </scg:Dictionary>
                                       </sap:WorkflowViewStateService.ViewState>
@@ -2210,7 +2210,7 @@ Select r =promotionfileWorkDt.Rows.Add({y})).CopyToDataTable]</InArgument>
                     </ui:CommentOut>
                     <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="854,52" sap2010:WorkflowViewState.IdRef="CommentOut_58">
                       <ui:CommentOut.Body>
-                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,163" sap2010:WorkflowViewState.IdRef="Sequence_95">
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,163" sap2010:WorkflowViewState.IdRef="Sequence_95">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2235,7 +2235,7 @@ Select r =promotionfileWorkDt.Rows.Add({y})).CopyToDataTable]</InArgument>
                     </ui:CommentOut>
                     <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="854,52" sap2010:WorkflowViewState.IdRef="CommentOut_59">
                       <ui:CommentOut.Body>
-                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,163" sap2010:WorkflowViewState.IdRef="Sequence_96">
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,163" sap2010:WorkflowViewState.IdRef="Sequence_96">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2260,7 +2260,7 @@ Select r =promotionfileWorkDt.Rows.Add({y})).CopyToDataTable]</InArgument>
                     </ui:CommentOut>
                     <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="854,52" sap2010:WorkflowViewState.IdRef="CommentOut_60">
                       <ui:CommentOut.Body>
-                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="450,163" sap2010:WorkflowViewState.IdRef="Sequence_97">
+                        <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="496,163" sap2010:WorkflowViewState.IdRef="Sequence_97">
                           <sap:WorkflowViewStateService.ViewState>
                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
